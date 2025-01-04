@@ -1,0 +1,2 @@
+# Zyno Bot
+Thank you for purchasing Zyno Bot! The full guide on how to set up Zyno Bot can be found on [https://zyno-bot.luukdev.nl](https://zyno-bot.luukdev.nl). If you have any questions or need any help with the installation, feel free to contact me on Discord (@luukw) or on BuiltByBit (LuukW)

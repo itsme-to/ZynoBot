@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transcript {TICKET_NAME}</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+            html, body{
+                margin: 0;
+                padding: 0;
+                background-color: #383737;
+                color: white;
+                font-family: Arial;
+                min-height: 100vh;
+                font-family: 'Roboto', sans-serif;
+            }
+            .container{
+                padding: 20px 40px;
+            }
+            .top{
+                padding: 20px;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .top .flex{
+                display: flex;
+                align-items: center;
+            }
+            .top .flex > *{
+                margin: 10px;
+            }
+            .top .flex img{
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+            }
+            .message{
+                display: block;
+                width: calc(100% - 20px);
+                background: transparent;
+                padding: 10px;
+                border-radius: 8px;
+                transition-duration: .3s;
+                font-family: 'Montserrat', sans-serif;
+                margin: 10px 0;
+            }
+            .message:hover{
+                background: #3f3f3f;
+            }
+            .message .replied{
+                position: relative;
+                height: 40px;
+                width: 100%;
+                margin: 0 0 0 35px;
+                display: flex;
+            }
+            .message .replied .sign{
+                height: 20px;
+                width: 50px;
+                border-top-left-radius: 10px;
+                background: transparent;
+                border-top: 3px solid #4f545c;
+                border-left: 3px solid #4f545c;
+                align-self: end;
+            }
+            .message .replied .to{
+                display: flex;
+                align-items: center;
+            }
+            .message .replied .to > *{
+                margin: 0 3px;
+                font-size: 12px;
+            }
+            .message .replied .to img{
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+            }
+            .message .replied .to .attachment-icon{
+                height: 20px;
+                width: 20px;
+                color: gray;
+            }
+            .message .user-top{
+                display: flex;
+                width: 100%;
+                position: relative;
+            }
+            .message .user-top > *{
+                margin: 10px;
+            }
+            .message .user-top img{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+            }
+            .message .user-top .content{
+                width: calc(100% - 70px);
+            }
+            .message .user-top .content .username{
+                margin: 0 0 10px 0;
+                font-weight: bold;
+                display: inline-block;
+            }
+            .message .user-top .content .username:hover{
+                text-decoration: underline;
+            }
+            .message .user-top .content .send-date{
+                display: inline-block;
+                font-size: 10px;
+                margin: 0 0 0 15px;
+                color: gray;
+            }
+            .message .user-top .content .user-content{
+                margin: 0;
+            }
+            .message .user-top .content .user-content code{
+                background-color: #2f3136;
+                color: white;
+            }
+            .message .user-top .content .user-content .textfield{
+                background-color: #2f3136;
+                border: 1px solid black;
+                border-radius: 8px;
+                padding: 10px;
+                width: calc(100% - 20px);
+                display: block;
+            }
+            .message .user-top .content .files{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 10px 0;
+            }
+            .message .user-top .content .files .file{
+                background-color: #2f3136;
+                height: 60px;
+                min-width: 170px;
+                max-width: 300px;
+                border-radius: 4px;
+                margin: 0 10px 0 0;
+                padding: 10px;
+                display: flex;
+            }
+            .message .user-top .content .files .file-icon, .message .user-top .content .image .image-icon{
+                height: 100%;
+                fill: white;
+                stroke: #7789c4;
+                stroke-width: 1px;
+            }
+            .message .user-top .content .files .file .fileinfo, .message .user-top .content .image .imageinfo{
+                margin: 5px;
+                position: relative;
+            }
+            .message .user-top .content .files .file .fileinfo .filename, .message .user-top .content .image .imageinfo .imagename{
+                margin: 0;
+                font-size: 14px;
+            }
+            .message .user-top .content .files .file .fileinfo .filesize, .message .user-top .content .image .imageinfo .imagesize{
+                margin: 0;
+                position: absolute;
+                bottom: 0;
+                font-size: 12px;
+            }
+            .message .user-top .content .image{
+                border-radius: 8px;
+                width: max-content;
+                max-width: 400px;
+                padding: 10px 0;
+                display: flex;
+                position: relative;
+                width: 100%;
+            }
+            .message .user-top .content .image img{
+                height: auto;
+                width: 100%;
+                position: relative;
+                border-radius: 10px;
+            }
+            .message .user-top .content .embed{
+                margin: 5px 0 0;
+                max-width: 600px;
+                width: fit-content;
+                border-radius: 8px;
+                background-color: #2f3136;
+                min-height: 150px;
+                position: relative;
+                padding: 5px 10px;
+                color: white;
+            }
+            .message .user-top .content .embed .color{
+                width: 5px;
+                height: 100%;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .message .user-top .content .embed .flex-box{
+                display: flex;
+            }
+            .message .user-top .content .embed .flex-box > *{
+                display: block;
+                margin: 10px;
+            }
+            .message .user-top .content .embed .flex-box .thumbnail{
+                padding: 0 10px;
+            }
+            .message .user-top .content .embed .flex-box .thumbnail img{
+                height: auto;
+                width: 100%;
+                max-width: 100px;
+                border-radius: 8px;
+            }
+            .message .user-top .content .embed .embed-top{
+                display: flex;
+                align-items: center;
+            }
+            .message .user-top .content .embed .embed-top > *{
+                margin: 0 15px 0 0;
+            }
+            .message .user-top .content .embed .embed-top img{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+            .message .user-top .content .embed .embed-top p{
+                font-weight: bold;
+            }
+            .message .user-top .content .embed .embed-top p a{
+                text-decoration: none;
+                color: white !important;
+            }
+            .message .user-top .content .embed .embed-top p a:hover{
+                text-decoration: underline;
+            }
+            .message .user-top .content .embed .description{
+                font-size: 13px;
+            }
+            .message .user-top .content .embed .fields{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .message .user-top .content .embed .fields .field-inline{
+                width: calc(100% / 3);
+                position: relative;
+                font-size: 12px;
+                margin: 0 auto;
+            }
+            .message .user-top .content .embed .fields > * .name{
+                font-weight: bold;
+            }
+            .message .user-top .content .embed .fields .field-no-inline{
+                width: 100%;
+                position: relative;
+                font-size: 12px;
+            }
+            .message .user-top .content .embed .bottom{
+                display: flex;
+                align-items: center;
+                font-size: 10px;
+                margin: 10px 0 10px 10px;
+            }
+            .message .user-top .content .embed .bottom .dot{
+                margin: 0 5px 0 0;
+            }
+            .message .user-top .content .embed .bottom .footer{
+                display: flex;
+                align-items: center;
+                margin: 0 5px;
+            }
+            .message .user-top .content .embed .bottom .footer img{
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+            .message .mention.user, .message .mention.channel{
+                background-color: #3c45a581;
+                color: white;
+                transition-duration: .3s;
+            }
+            .message .mention.user:hover, .message .mention.channel:hover{
+                background-color: #3c45a5;
+            }
+            .message .quote{
+                padding: 0 0 0 10px;
+                position: relative;
+            }
+            .message .quote::before{
+                content: '';
+                background-color: #4f545c;
+                height: 100%;
+                width: 3px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            a{
+                color: #00aff4;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            @media only screen and (max-width: 550px){
+                .message .user-top .content .embed .flex-box{
+                    display: block;
+                }
+                .message .user-top .content .embed .fields{
+                    display: block;
+                }
+                .message .user-top .content .embed .fields .field-inline{
+                    width: 100%;
+                }
+            }
+        </style>
+        <script type="text/javascript">
+            {IMAGEINFO}
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <div class="flex">
+                    <img src="{GUILD_ICON}">
+                    <h2>{GUILD_NAME}</h2>
+                </div>
+                <h3>{TICKET_NAME}</h3>
+                <p>Closed for reason: {TICKET_REASON}</p>
+                <p>Ticket opened on: {OPEN_DATE}</p>
+                <p>Ticket closed on: {CLOSE_DATE}</p>
+                <p>Ticket closed by: {CLOSED_BY}</p>
+            </div>
+            <hr>
+            {MESSAGES}
+            <br>
+            <hr>
+            <br>
+            <small>Auto generated transcript by Zyno Bot ({BOT_NAME})</small>
+        </div>
+        <script type="text/javascript">
+            let images = Array.from(document.querySelectorAll(`img[data-index]`));
+            for(let image of images){
+                let imageIndex = image.getAttribute('data-index');
+                if(!/^[0-9]*$/.test(imageIndex)) continue;
+                imageIndex = parseInt(imageIndex);
+                if(imageIndex >= cachedImages.length) continue;
+                image.src = cachedImages[imageIndex];
+            }
+        </script>
+    </body>
+</html>
