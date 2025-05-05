@@ -1,0 +1,152 @@
+{
+    "token": null,
+    "prefix": null,
+    "message-commands": true,
+    "tickets": {
+        "enabled": true,
+        "roles": {},
+        "parent": {},
+        "max": {},
+        "categoryType": {},
+        "dm": {},
+        "claim-system": {},
+        "instant-category": {},
+        "tag-support": {},
+        "logs-channel": {},
+        "auto-tag": {}
+    },
+    "joinRoles": {},
+    "moderator_roles": {},
+    "filters": {
+        "badword": {},
+        "invite": {},
+        "links": {}
+    },
+    "guilds": [],
+    "activity": "Zyno Bot 👀",
+    "embeds": {
+        "color": "#fcba03",
+        "author": "DEFAULT",
+        "footer": "© Zyno Bot",
+        "timestamp": true
+    },
+    "timezone": "Europe/London",
+    "level": {
+        "enabled": true,
+        "notification-channel": {},
+        "level-up-messages": {},
+        "canvas-type": {},
+        "background-canvas": "/files/level-canvas-background.png",
+        "difficulty": {}
+    },
+    "categories": [
+        {
+            "category": "admin",
+            "emoji": "🎩"
+        },
+        {
+            "category": "bot",
+            "emoji": "🤖"
+        },
+        {
+            "category": "tickets",
+            "emoji": "🎫"
+        },
+        {
+            "category": "level",
+            "emoji": "🆙"
+        },
+        {
+            "category": "economy",
+            "emoji": "🪙"
+        },
+        {
+            "category": "moderation",
+            "emoji": "🛠️"
+        },
+        {
+            "category": "music",
+            "emoji": "🎵"
+        },
+        {
+            "category": "giveaway",
+            "emoji": "🎉"
+        },
+        {
+            "category": "fun",
+            "emoji": "🎈"
+        },
+        {
+            "category": "general",
+            "emoji": "❓"
+        },
+        {
+            "category": "games",
+            "emoji": "🎮"
+        },
+        {
+            "category": "polls",
+            "emoji": "📊"
+        }
+    ],
+    "minecraft": {},
+    "fivem": {},
+    "economy": {
+        "enabled": true,
+        "voice": {
+            "enabled": true,
+            "coins": 5,
+            "seconds": 10
+        }
+    },
+    "moderation": true,
+    "music": true,
+    "giveaway": true,
+    "fun": true,
+    "general": true,
+    "games": true,
+    "polls": true,
+    "verificationType": {},
+    "welcome": {},
+    "leave": {},
+    "logs": {
+        "channel": {},
+        "member": {},
+        "role": {},
+        "message": {}
+    },
+    "countingChannel": {},
+    "snakeChannel": {},
+    "suggestion": {},
+    "helpEmbedOnTag": true,
+    "helpEmbedFull": false,
+    "autoreply": {
+        "command": {},
+        "song": {}
+    },
+    "autoInstallation": true,
+    "license": {
+        "key": null,
+        "activationKey": null,
+        "password": null,
+        "activated": false,
+        "version": "1.8.1"
+    },
+    "spotifyCredentials": {
+      "clientId": null,
+      "clientSecret": null
+    },
+    "youtubeApiKey": null,
+    "port": null,
+    "database": {
+        "type": "ValueSaver",
+        "mysql": {
+            "host": null,
+            "user": null,
+            "password": null,
+            "database": null
+        }
+    },
+    "debugger": false,
+    "ffmpeg": true
+}
