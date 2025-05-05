@@ -1,0 +1,288 @@
+{
+  "token": "TOKEN",
+  "prefix": "!",
+  "message-commands": true,
+  "tickets": {
+    "enabled": true,
+    "roles": {
+      "1259953597416734895": [],
+      "1198303618701480106": []
+    },
+    "parent": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    },
+    "max": {
+      "1259953597416734895": 2,
+      "1198303618701480106": 2
+    },
+    "categoryType": {
+      "1259953597416734895": "BUTTONS",
+      "1198303618701480106": "BUTTONS"
+    },
+    "dm": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    },
+    "claim-system": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    },
+    "instant-category": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    },
+    "tag-support": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    },
+    "logs-channel": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    },
+    "auto-tag": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    }
+  },
+  "joinRoles": {
+    "1259953597416734895": [],
+    "1198303618701480106": []
+  },
+  "moderator_roles": {
+    "1259953597416734895": [],
+    "1198303618701480106": []
+  },
+  "filters": {
+    "badword": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    },
+    "invite": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    },
+    "links": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    }
+  },
+  "guilds": [
+    "1198303618701480106"
+  ],
+  "activity": "Zyno Bot 👀",
+  "embeds": {
+    "color": "#fcba03",
+    "author": "DEFAULT",
+    "footer": "© Zyno Bot",
+    "timestamp": true
+  },
+  "timezone": "Europe/London",
+  "level": {
+    "enabled": true,
+    "notification-channel": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    },
+    "level-up-messages": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    },
+    "canvas-type": {
+      "1259953597416734895": "MODERN",
+      "1198303618701480106": "MODERN"
+    },
+    "background-canvas": "/files/level-canvas-background.png",
+    "difficulty": {
+      "1259953597416734895": "EXPONENTIAL HARD",
+      "1198303618701480106": "EXPONENTIAL HARD"
+    }
+  },
+  "categories": [
+    {
+      "category": "admin",
+      "emoji": "🎩"
+    },
+    {
+      "category": "bot",
+      "emoji": "🤖"
+    },
+    {
+      "category": "tickets",
+      "emoji": "🎫"
+    },
+    {
+      "category": "level",
+      "emoji": "🆙"
+    },
+    {
+      "category": "economy",
+      "emoji": "🪙"
+    },
+    {
+      "category": "moderation",
+      "emoji": "🛠️"
+    },
+    {
+      "category": "music",
+      "emoji": "🎵"
+    },
+    {
+      "category": "giveaway",
+      "emoji": "🎉"
+    },
+    {
+      "category": "fun",
+      "emoji": "🎈"
+    },
+    {
+      "category": "general",
+      "emoji": "❓"
+    },
+    {
+      "category": "games",
+      "emoji": "🎮"
+    },
+    {
+      "category": "polls",
+      "emoji": "📊"
+    }
+  ],
+  "minecraft": {
+    "1259953597416734895": {
+      "server": false,
+      "background-image": "/files/minecraft_server_background.png",
+      "type": "java"
+    },
+    "1198303618701480106": {
+      "server": false,
+      "background-image": "/files/minecraft_server_background.png",
+      "type": "java"
+    }
+  },
+  "fivem": {
+    "1259953597416734895": {
+      "server": false,
+      "background-image": "/files/minecraft_server_background.png"
+    },
+    "1198303618701480106": {
+      "server": false,
+      "background-image": "/files/minecraft_server_background.png"
+    }
+  },
+  "economy": {
+    "enabled": true,
+    "voice": {
+      "enabled": true,
+      "coins": 5,
+      "seconds": 10
+    }
+  },
+  "moderation": true,
+  "music": true,
+  "giveaway": true,
+  "fun": true,
+  "general": true,
+  "games": true,
+  "polls": true,
+  "verificationType": {
+    "1259953597416734895": false,
+    "1198303618701480106": false
+  },
+  "welcome": {
+    "1259953597416734895": {
+      "channel": false,
+      "type": "IMAGE",
+      "background-canvas": "/files/welcome_leave_bg_banner.png"
+    },
+    "1198303618701480106": {
+      "channel": false,
+      "type": "IMAGE",
+      "background-canvas": "/files/welcome_leave_bg_banner.png"
+    }
+  },
+  "leave": {
+    "1259953597416734895": {
+      "channel": false,
+      "type": "IMAGE",
+      "background-canvas": "/files/welcome_leave_bg_banner.png"
+    },
+    "1198303618701480106": {
+      "channel": false,
+      "type": "IMAGE",
+      "background-canvas": "/files/welcome_leave_bg_banner.png"
+    }
+  },
+  "logs": {
+    "channel": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    },
+    "member": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    },
+    "role": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    },
+    "message": {
+      "1259953597416734895": false,
+      "1198303618701480106": false
+    }
+  },
+  "countingChannel": {
+    "1259953597416734895": false,
+    "1198303618701480106": false
+  },
+  "snakeChannel": {
+    "1259953597416734895": false,
+    "1198303618701480106": false
+  },
+  "suggestion": {
+    "1259953597416734895": {
+      "channel": false,
+      "conversion": true,
+      "autoThread": true
+    },
+    "1198303618701480106": {
+      "channel": false,
+      "conversion": true,
+      "autoThread": true
+    }
+  },
+  "helpEmbedOnTag": true,
+  "helpEmbedFull": false,
+  "autoreply": {
+    "command": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    },
+    "song": {
+      "1259953597416734895": true,
+      "1198303618701480106": true
+    }
+  },
+  "autoInstallation": true,
+  "license": {
+    "key": "6DYW-3RCW-IMJR-7TRX",
+    "version": "1.8.1"
+  },
+  "spotifyCredentials": {
+    "clientId": null,
+    "clientSecret": null
+  },
+  "youtubeApiKey": null,
+  "port": null,
+  "database": {
+    "type": "ValueSaver",
+    "mysql": {
+      "host": null,
+      "user": null,
+      "password": null,
+      "database": null
+    }
+  },
+  "debugger": false,
+  "ffmpeg": true
+}

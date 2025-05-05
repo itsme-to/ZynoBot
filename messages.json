@@ -1,0 +1,2612 @@
+{
+    "tickets": {
+        "ticket-messages": {
+            "default": {
+                "title": "Ticket created",
+                "message": "Welcome in your ticket [^CREATOR_USER]! Please tell us your problem/question and we will help you as soon as possible!\n\n**Claimed by:**\n[^CLAIMED_USER]"
+            },
+            "category": {
+                "title": "Ticket created",
+                "message": "Welcome in your ticket [^CREATOR_USER]! Thank you for opening a ticket. We'll help you as soon as possible further.\n\n**Category:**\n> [^CATEGORY]\n[^QUESTIONS]\n**Claimed by:**\n[^CLAIMED_USER]"
+            }
+        },
+        "category-message": {
+            "title": "Ticket created",
+            "message": "Welcome in your ticket [USER]! Please select one of the categories below and we'll help you as soon as possible further."
+        },
+        "instant-category": {
+            "title": "Open Ticket",
+            "message": "To open a ticket, please select one of the ticket categories below.",
+            "image": null
+        },
+        "tag-on-reply": {
+            "ticket-not-found": {
+                "title": "Ticket not found",
+                "message": "The ticket where you tried to enable tag on reply couldn't be found"
+            },
+            "enabled": {
+                "title": "Tag on reply enabled",
+                "message": "You will now automatically get tagged on each reply inside this ticket"
+            },
+            "disabled": {
+                "title": "Tag on reply disabled",
+                "message": "You will not be tagged anymore on any reply inside this ticket"
+            }
+        },
+        "questions-template": "**[^QUESTION]**\n> [^ANSWER]",
+        "close-button": "🔒 Close Ticket",
+        "tag-on-reply-button": "❗ Tag me on reply",
+        "claim-button": "🙋 Claim Ticket",
+        "unclaim-button": "❌ Unclaim Ticket",
+        "questions-title": "Please answer these questions",
+        "ticket-not-claimed": "No one",
+        "open-ticket": {
+            "error-messages": {
+                "unknown-error": {
+                    "title": "Error",
+                    "message": "I was unable to create a ticket for you"
+                },
+                "open-ticket": {
+                    "title": "Open ticket",
+                    "message": "You already have [^TICKET_COUNT] open ticket(s). Close a ticket before opening a new one."
+                }
+            }
+        },
+        "reopen-ticket": {
+            "reopen-message": {
+                "title": "Ticket reopened",
+                "message": "The ticket has been reopened by [USERNAME]"
+            },
+            "reopen-failed": {
+                "title": "Error",
+                "message": "There was an error while reopening the ticket"
+            },
+            "button": "🔓 Reopen Ticket"
+        },
+        "close-ticket": {
+            "force-close-button": "⛔ Delete Ticket",
+            "error-messages": {
+                "unknown-error": {
+                    "title": "Failed to close ticket",
+                    "message": "There was an error while trying to close the ticket"
+                },
+                "not-ticket": {
+                    "title": "Not a ticket",
+                    "message": "This channel ([CHANNEL]) is not a ticket and can not be closed"
+                }
+            },
+            "close-embed": {
+                "title": "Ticket closed",
+                "message": "The ticket has been closed by [USERNAME], click one of the buttons below to perform an action"
+            },
+            "success-message": {
+                "title": "Ticket closed",
+                "message": "The ticket from [USERNAME 2] has been closed by [USERNAME] for the reason `[^REASON]`\n\nTicket opened on: [OPENED DATE]\nTicket closed on: [CLOSED DATE]\nTicket: [CHANNEL NAME]"
+            }
+        },
+        "embed": {
+            "title": "Open Ticket",
+            "message": "Click the button below to open a ticket",
+            "image": null,
+            "button": "🎫 Open Ticket"
+        },
+        "commands": {
+            "error-messages": {
+                "category-doesnt-exist": {
+                    "title": "Ticket category doesn't exist",
+                    "message": "The ticket category you tried to use, doesn't exist."
+                },
+                "no-permissions-add": {
+                    "title": "No permissions",
+                    "message": "You need the permissions `[^PERMISSIONS]` to add someone to this ticket"
+                },
+                "not-ticket": {
+                    "title": "Not a ticket",
+                    "message": "This channel ([CHANNEL]) is not a ticket"
+                },
+                "no-mention-add": {
+                    "title": "No mention",
+                    "message": "Please mention someone in order to add the user to the ticket"
+                },
+                "unknown-error-add": {
+                    "title": "Error",
+                    "message": "There was an error while trying to add [USER 2] to this ticket"
+                },
+                "no-permissions-create": {
+                    "title": "No permissions",
+                    "message": "You need the `[^PERMISSIONS]` permissions to use this command."
+                },
+                "no-permissions-forceclose": {
+                    "title": "No permissions",
+                    "message": "You need the `[^PERMISSIONS]` permissions to use this command."
+                },
+                "no-permissions-remove": {
+                    "title": "No permissions",
+                    "message": "You need the permissions `[^PERMISSIONS]` to remove someone to this ticket"
+                },
+                "no-permissions-set-category": {
+                    "title": "No permissions",
+                    "message": "You need the permissions `[^PERMISSIONS]` to change the category of this ticket"
+                },
+                "no-mention-remove": {
+                    "title": "No mention",
+                    "message": "Please mention someone in order to remove the user from the ticket"
+                },
+                "unknown-error-remove": {
+                    "title": "Error",
+                    "message": "There was an error while trying to remove [USER 2] from this ticket"
+                },
+                "ticket-already-assigned": {
+                    "title": "Ticket already assigned",
+                    "message": "The ticket has already been assigned to [USER 2]. The user must unclaim the ticket before another user can be assigned to this ticket."
+                },
+                "ticket-outdated": {
+                    "title": "Ticket outdated",
+                    "message": "This ticket is too old to provide this feature."
+                },
+                "assign-owner": {
+                    "title": "Ticket can't be assigned",
+                    "message": "The ticket can't be assigned to the user who opened the ticket."
+                },
+                "claim-system-disabled": {
+                    "title": "Claim system disabled",
+                    "message": "The ticket claim system has been disabled and therefore you can't assign this ticket to a user."
+                },
+                "no-categories": {
+                    "title": "No categories set",
+                    "message": "There have no categories been set for this server."
+                }
+            },
+            "success-messages": {
+                "user-added": {
+                    "title": "User added",
+                    "message": "The user [USER 2] has been added to this ticket ([CHANNEL])"
+                },
+                "user-removed": {
+                    "title": "User removed",
+                    "message": "The user [USER 2] has been removed from this ticket ([CHANNEL])"
+                },
+                "created-ticket-message": {
+                    "title": "Ticket message created",
+                    "message": "Your ticket message has successfully been created"
+                },
+                "ticket-created-confirmation": {
+                    "title": "Ticket created",
+                    "message": "Your ticket has successfully been created! Go to your ticket ([CHANNEL]) to get further help."
+                },
+                "loading-create-ticket": {
+                    "title": "Creating ticket",
+                    "message": "Your ticket is currently beïng created..."
+                },
+                "ticket-assigned": {
+                    "title": "Ticket assigned",
+                    "message": "The ticket has successfully been assigned to [USER 2]"
+                },
+                "my-tickets": {
+                    "title": "My tickets",
+                    "message": "Tickets that you have claimed or have been assigned to you:\n[^TICKETS]",
+                    "no-tickets": "No tickets have been claimed by you or have been assigned to you.",
+                    "unknown-ticket": "Unknown ticket"
+                },
+                "select-category": {
+                    "title": "Select a category",
+                    "message": "Please select one of the ticket categories in the menu below to change the ticket category."
+                },
+                "converting-category": {
+                    "title": "Converting ticket category...",
+                    "message": "This ticket is being converted to a [^CATEGORY] ticket"
+                },
+                "converted-category": {
+                    "title": "Changed ticket category",
+                    "message": "The ticket category has successfully been changed to a [^CATEGORY] ticket"
+                }
+            }
+        }
+    },
+    "bot-cmds": {
+        "error-messages": {
+            "no-permissions-activity": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` in order to change the bot's activity"
+            },
+            "no-activity-provided": {
+                "title": "No activity provided",
+                "message": "Please include the new activity of the bot in the command"
+            },
+            "no-permissions-username": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` in order to change the bot's username"
+            },
+            "no-permissions-info": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` in order to view the bot's information"
+            },
+            "no-username-provided": {
+                "title": "No username provided",
+                "message": "Please include the new username of the bot in the command"
+            },
+            "no-permissions-shutdown": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` in order to shut the bot down"
+            },
+            "no-permissions-avatar": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` in order to change the bot's avatar"
+            },
+            "no-permissions-banner": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` in order to change the bot's banner"
+            },
+            "no-avatar-provided": {
+                "title": "No avatar provided",
+                "message": "Please include the url of the new avatar of the bot in the command"
+            },
+            "invalid-url": {
+                "title": "Invalid URL",
+                "message": "The provided url is not a valid url"
+            },
+            "error-avatar": {
+                "title": "Error",
+                "message": "There was an error while trying to update the bot's avatar"
+            },
+            "no-banner-provided": {
+                "title": "No banner provided",
+                "message": "Please include the url of the new banner of the bot in the command"
+            },
+            "invalid-url-banner": {
+                "title": "Invalid URL",
+                "message": "The provided url is not a valid url"
+            },
+            "error-banner": {
+                "title": "Error",
+                "message": "There was an error while trying to update the bot's banner:\n`[^ERROR]`"
+            },
+            "error-avatar-2": {
+                "title": "Error",
+                "message": "There was an error while trying to update the bot's avatar:\n`[^ERROR]`"
+            },
+            "error-username": {
+                "title": "Error",
+                "message": "There was an error while trying to update the bot's username"
+            }
+        },
+        "confirm-messages": {
+            "shutdown": {
+                "title": "Please confirm your action",
+                "message": "Are you sure that you want to shut down **[CLIENT TAG]**? The bot won't be able to respond to any commands. You'll need to restart the bot manually if you confirm this action.",
+                "cancel-button": "Cancel",
+                "confirm-button": "Shut down"
+            }
+        },
+        "success-messages": {
+            "activity-updated": {
+                "title": "Activity updated",
+                "message": "The activity of the bot has successfully been updated to `[^ACTIVITY]`!\n\nPlease note that it can take a while before you can see the new activity"
+            },
+            "username-updated": {
+                "title": "Username updated",
+                "message": "The username of the bot has successfully been updated to `[^USERNAME]`!\n\nPlease note that it can take a while before you can see the new username"
+            },
+            "avatar-updated": {
+                "title": "Avatar updated",
+                "message": "The avatar of the bot has successfully been updated to [^AVATAR]!"
+            },
+            "banner-updated": {
+                "title": "Banner updated",
+                "message": "The banner of the bot has successfully been updated to [^BANNER]!"
+            },
+            "shutdown": {
+                "title": "Shutting down...",
+                "message": "**[CLIENT USER]** will shut down in a few seconds..."
+            },
+            "info": {
+                "title": "Bot information",
+                "message": "```\nZyno Bot version: [^CURRENT_VERSION]\nLatest version: [^LATEST_VERSION]\nUpdate available: [^UPDATE_STATUS]\nDebugger status: [^DEBUGGER_STATUS]\nFFmpeg installed: [^FFMPEG_INSTALLED]\nFFmpeg status: [^FFMPEG_STATUS]\nDiscord.js version: [^DISCORD_JS_VERSION]\nZyno Bot Addons version: [^ZYNO_BOT_ADDONS_VERSION]\nLast restart: [^RESTART_TIME]\n```",
+                "placeholders": {
+                    "yes": "Yes",
+                    "no": "No",
+                    "enabled": "Enabled",
+                    "disabled": "Disabled"
+                }
+            }
+        }
+    },
+    "economy-cmds": {
+        "beg": {
+            "wait-embed": {
+                "title": "Timeout",
+                "message": "You need to wait [^TIME] minutes before you can beg again"
+            },
+            "beg-title": "You begged"
+        },
+        "crime": {
+            "wait-embed": {
+                "title": "Timeout",
+                "message": "You need to wait [^TIME] minutes before you can commit another crime again"
+            },
+            "crime-title": "You committed a crime"
+        },
+        "rob": {
+            "wait-embed": {
+                "title": "Timeout",
+                "message": "You need to wait [^TIME] minutes before you can rob someone again"
+            },
+            "crime-title": "You robbed [^USERNAME]",
+            "rob-yourself": {
+                "title": "Unable to rob",
+                "message": "You can not rob yourself or a bot"
+            },
+            "no-mention": {
+                "title": "No mention",
+                "message": "Please mention someone in order to rob him/her"
+            }
+        },
+        "work": {
+            "wait-embed": {
+                "title": "Timeout",
+                "message": "You need to wait [^TIME] minutes before you can work again"
+            },
+            "crime-title": "You worked"
+        },
+        "daily": {
+            "wait-embed": {
+                "title": "Daily already claimed",
+                "message": "You've already claimed your daily bonus"
+            },
+            "claim-embed": {
+                "title": "Daily claimed",
+                "message": "Your daily of [^MONEY] has successfully been claimed",
+                "daily": 400
+            }
+        },
+        "deposit": {
+            "no-money-provided": {
+                "title": "No money provided",
+                "message": "Please provide the amount of money you want to deposit to your bank"
+            },
+            "not-enough-money": {
+                "title": "Not enough money",
+                "message": "You don't have enough money to deposit to your bank"
+            },
+            "invalid-money": {
+                "title": "Invalid money",
+                "message": "The money you want to deposit with should be a number"
+            },
+            "deposit-success": {
+                "title": "Deposit money",
+                "message": "Your money has successfully been deposited to your bank"
+            }
+        },
+        "inventory": {
+            "no-member-found": {
+                "title": "No member found",
+                "message": "There were no members found in this server matching the member you have provided"
+            },
+            "no-inventory": {
+                "title": "[USERNAME]'s inventory",
+                "message": "[USERNAME] has no items in their inventory"
+            },
+            "inventory": {
+                "title": "[USERNAME]'s inventory",
+                "message": "[^ITEMS]",
+                "item": "[^EMOJI]**[^NAME]:** [^PRICE]",
+                "emoji": "[^EMOJI] "
+            }
+        },
+        "withdraw": {
+            "no-money-provided": {
+                "title": "No money provided",
+                "message": "Please provide the amount of money you want to withdraw from your bank"
+            },
+            "not-enough-money": {
+                "title": "Not enough money",
+                "message": "You don't have enough money to withdraw from your bank"
+            },
+            "invalid-money": {
+                "title": "Invalid money",
+                "message": "The money you want to withdraw with should be a number"
+            },
+            "withdraw-success": {
+                "title": "Withdraw money",
+                "message": "Your money has successfully been withdrawn to your bank"
+            }
+        },
+        "transfer": {
+            "no-mention-provided": {
+                "title": "No mention provided",
+                "message": "Please mention the user you want to transfer your money to"
+            },
+            "no-money-provided": {
+                "title": "No money provided",
+                "message": "Please provide the amount of money you want to transfer"
+            },
+            "not-enough-money": {
+                "title": "Not enough money",
+                "message": "You don't have enough money to transfer"
+            },
+            "invalid-money": {
+                "title": "Invalid money",
+                "message": "The money you want to transfer should be a number"
+            },
+            "transfer-success": {
+                "title": "Transferred money",
+                "message": "Your money has successfully been transferred to [USER 2]'s account"
+            }
+        },
+        "roulette": {
+            "no-money-provided": {
+                "title": "No money provided",
+                "message": "Please provide the amount of money you want to gamble with"
+            },
+            "no-bet-provided": {
+                "title": "No bet provided",
+                "message": "Please choose to bet on the color red, black or green"
+            },
+            "invalid-money": {
+                "title": "Invalid money",
+                "message": "The money you want to gamble with should be a number"
+            },
+            "minimum-roulette": {
+                "title": "Minimum bet",
+                "message": "You should at least bet [^BET]",
+                "minimum": 200
+            },
+            "not-enough-money": {
+                "title": "Not enough money",
+                "message": "You don't have enough money to bet"
+            },
+            "end-embed": {
+                "title": "Roulette",
+                "message": "You've bet [^BET_MONEY] on [^EMOJI_COLOR] [^COLOR]\n\nThe winner is: [^EMOJI_WIN_COLOR] [^WIN_COLOR]\nYou've [^STATUS] [^MONEY]",
+                "won-text": "won",
+                "lost-text": "lost"
+            }
+        },
+        "blackjack": {
+            "no-money-provided": {
+                "title": "No money provided",
+                "message": "Please provide the amount of money you want to gamble with"
+            },
+            "invalid-money": {
+                "title": "Invalid money",
+                "message": "The money you want to gamble with should be a number"
+            },
+            "minimum-blackjack": {
+                "title": "Minimum bet",
+                "message": "You should at least bet [^BET]",
+                "minimum": 200
+            },
+            "not-enough-money": {
+                "title": "Not enough money",
+                "message": "You don't have enough money to bet"
+            },
+            "unknown-interaction": {
+                "title": "Unknown interaction",
+                "message": "The interaction is unknown, please try it again"
+            },
+            "playing-embed": {
+                "title": "Blackjack",
+                "message": "Your bet: [^BET_MONEY]\nYour cards: **[^CARDS]**\nDealer cards: **[^DEALER_CARD]**\n\nClick on the buttons below to hit or stand",
+                "won-text": "won",
+                "lost-text": "lost",
+                "end": {
+                    "end-message": "Your bet: [^BET_MONEY]\nYour cards: **[^CARDS]**\nDealer cards: **[^DEALER_CARDS]**\n\nYou've [^STATUS] [^RESULT_MONEY]",
+                    "busted-message": "Your bet: [^BET_MONEY]\nYour cards: **[^CARDS]**\n\nYou busted at **[^CARDS]**\nYou've lost [^BET_MONEY]",
+                    "push-message": "Your bet: [^BET_MONEY]\nYour cards: **[^CARDS]**\nDealer cards: **[^DEALER_CARDS]**\n\nIt's a push, you get your bet back"
+                }
+            }
+        },
+        "slot": {
+            "no-money-provided": {
+                "title": "No money provided",
+                "message": "Please provide the amount of money you want to gamble with"
+            },
+            "invalid-money": {
+                "title": "Invalid money",
+                "message": "The money you want to gamble with should be a number"
+            },
+            "minimum-slot": {
+                "title": "Minimum bet",
+                "message": "You should at least bet [^BET]",
+                "minimum": 200
+            },
+            "not-enough-money": {
+                "title": "Not enough money",
+                "message": "You don't have enough money to bet"
+            },
+            "gamble-embed": {
+                "title": "Slot machine",
+                "message": "You've gambled [^MONEY]\n\n⠀⠀⠀[^UPPERSLOT]\n▶️⠀[^MAINSLOT]\n⠀⠀⠀[^LOWERSLOT]\n\nYou've [^STATUS] [^STATUS_MONEY]",
+                "won-text": "won",
+                "lost-text": "lost"
+            }
+        },
+        "purchase": {
+            "no-items": {
+                "title": "No items for sale",
+                "message": "There are currently no items for sale which you can purchase"
+            },
+            "shop": {
+                "title": "Shop",
+                "message": "[^ITEMS]",
+                "item": "[^EMOJI]**[^NAME][^STOCK]:** [^PRICE]\n[^DESCRIPTION]",
+                "emoji": "[^EMOJI] ",
+                "stock": " ([^STOCK] in stock)",
+                "purchase": "Purchase"
+            },
+            "item-not-found": {
+                "title": "Item not found",
+                "message": "The item you tried to purchase couldn't be found"
+            },
+            "item-not-in-stock": {
+                "title": "Item not in stock",
+                "message": "The item you tried to purchase isn't currently in stock"
+            },
+            "not-enough-cash": {
+                "title": "Not enough cash",
+                "message": "You don't have enough cash to purchase this item"
+            },
+            "already-owned": {
+                "title": "Already owned",
+                "message": "You already own this item"
+            },
+            "purchased": {
+                "title": "Item purchased",
+                "message": "You have successfully purchased this item"
+            }
+        },
+        "shop": {
+            "no-items": {
+                "title": "No items for sale",
+                "message": "There are currently no items for sale which you can purchase"
+            },
+            "shop": {
+                "title": "Shop",
+                "message": "[^ITEMS]",
+                "item": "[^EMOJI]**[^NAME][^STOCK]:** [^PRICE]\n[^DESCRIPTION]",
+                "emoji": "[^EMOJI] ",
+                "stock": " ([^STOCK] in stock)"
+            }
+        }
+    },
+    "polls": {
+        "start": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to start a poll"
+            },
+            "missing-arguments": {
+                "title": "Missing arguments",
+                "message": "Please use the command like this: `[^PREFIX]poll start [QUESTION] [DURATION]`"
+            },
+            "invalid-choices": {
+                "title": "Invalid amount of choices",
+                "message": "The amount of choices must be a number between `2-10`"
+            },
+            "invalid-time": {
+                "title": "Invalid time",
+                "message": "The time must be between 1 minute and 14 days"
+            },
+            "invalid-question": {
+                "title": "Invalid question",
+                "message": "The question name must be at least 1 character long and can max be 100 characters long"
+            },
+            "set-choices": {
+                "title": "Amount of choices",
+                "message": "Please select in the select menu below the amount of choices that should be created for this poll"
+            },
+            "unknown-interaction": {
+                "title": "Unknown interaction",
+                "message": "The interaction was unknown, please try it again."
+            },
+            "embed": {
+                "title": "[^QUESTION]",
+                "message": "[^OPTIONS]\n\nPoll ends at: [^TIMESTAMP]",
+                "options": {
+                    "1": "1️⃣ [^OPTION]",
+                    "2": "2️⃣ [^OPTION]",
+                    "3": "3️⃣ [^OPTION]",
+                    "4": "4️⃣ [^OPTION]",
+                    "5": "5️⃣ [^OPTION]"
+                }
+            }
+        },
+        "ended-embed": {
+            "title": "Poll results",
+            "message": "**[^QUESTION]**\n\nResult:\n[^RESULT]\n\n[^OPTIONS]\n\nPoll ended at: [^TIMESTAMP]",
+            "options": {
+                "1": "1️⃣ [^OPTION] - **[^RESULT]**",
+                "2": "2️⃣ [^OPTION] - **[^RESULT]**",
+                "3": "3️⃣ [^OPTION] - **[^RESULT]**",
+                "4": "4️⃣ [^OPTION] - **[^RESULT]**",
+                "5": "5️⃣ [^OPTION] - **[^RESULT]**"
+            }
+        },
+        "end": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to end a poll"
+            },
+            "missing-arguments": {
+                "title": "Missing arguments",
+                "message": "Please use the command like this: `[^PREFIX]poll end [MESSAGE ID]`"
+            },
+            "not-exist": {
+                "title": "Poll does not exists",
+                "message": "The poll with the message ID `[^MESSAGE]` does not exist"
+            },
+            "success": {
+                "title": "Ended",
+                "message": "The poll with the message ID `[^MESSAGE]` has successfully been ended"
+            },
+            "loading": {
+                "title": "Loading",
+                "message": "The poll is beïng ended"
+            }
+        },
+        "overview": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to see an overview of the polls"
+            },
+            "no-polls": {
+                "title": "No active polls",
+                "message": "There are currently no active polls to view"
+            },
+            "overview": {
+                "title": "[^QUESTION]",
+                "message": "Choices:\n[^OPTIONS]\n\nTotal votes:\n> [^TOTAL_VOTES]",
+                "fields": [
+                    {
+                        "name": "Channel",
+                        "message": "[^CHANNEL_MENTION]"
+                    },
+                    {
+                        "name": "Created at",
+                        "message": "[^CREATED_TIMESTAMP]"
+                    },
+                    {
+                        "name": "Ends at",
+                        "message": "[^END_TIMESTAMP]"
+                    }
+                ],
+                "options": {
+                    "1": "1️⃣ [^OPTION] - **[^VOTES]/[^TOTAL_VOTES] ([^PERCENTAGE])**",
+                    "2": "2️⃣ [^OPTION] - **[^VOTES]/[^TOTAL_VOTES] ([^PERCENTAGE])**",
+                    "3": "3️⃣ [^OPTION] - **[^VOTES]/[^TOTAL_VOTES] ([^PERCENTAGE])**",
+                    "4": "4️⃣ [^OPTION] - **[^VOTES]/[^TOTAL_VOTES] ([^PERCENTAGE])**",
+                    "5": "5️⃣ [^OPTION] - **[^VOTES]/[^TOTAL_VOTES] ([^PERCENTAGE])**"
+                }
+            }
+        }
+    },
+    "giveaway": {
+        "confirmation-text": {
+            "title": "Entry confirmed",
+            "message": "Your entry for the giveaway of [^GIVEAWAY] is confirmed"
+        },
+        "congrats-message": "🎉 Congrats [^WINNERS]! You've won **[^PRIZE]**! 🎉",
+        "delete": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to delete a giveaway"
+            },
+            "missing-arguments": {
+                "title": "Missing arguments",
+                "message": "Please use the command like this: `[^PREFIX]giveaway delete [MESSAGE ID]`"
+            },
+            "not-exist": {
+                "title": "Giveaway does not exists",
+                "message": "The giveaway with the message ID `[^MESSAGE]` does not exist"
+            },
+            "success": {
+                "title": "Deleted",
+                "message": "The giveaway with the message ID `[^MESSAGE]` has successfully been deleted"
+            },
+            "loading": {
+                "title": "Loading",
+                "message": "The giveaway is beïng deleted"
+            }
+        },
+        "reroll": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to reroll a giveaway"
+            },
+            "missing-arguments": {
+                "title": "Missing arguments",
+                "message": "Please use the command like this: `[^PREFIX]giveaway reroll [MESSAGE ID]`"
+            },
+            "not-exist": {
+                "title": "Giveaway does not exists",
+                "message": "The giveaway with the message ID `[^MESSAGE]` does not exist"
+            },
+            "success": {
+                "title": "Rerolled",
+                "message": "The giveaway with the message ID `[^MESSAGE]` has successfully been rerolled"
+            },
+            "loading": {
+                "title": "Loading",
+                "message": "The giveaway is beïng rerolled"
+            }
+        },
+        "end": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to end a giveaway"
+            },
+            "missing-arguments": {
+                "title": "Missing arguments",
+                "message": "Please use the command like this: `[^PREFIX]giveaway end [MESSAGE ID]`"
+            },
+            "not-exist": {
+                "title": "Giveaway does not exists",
+                "message": "The giveaway with the message ID `[^MESSAGE]` does not exist"
+            },
+            "success": {
+                "title": "Ended",
+                "message": "The giveaway with the message ID `[^MESSAGE]` has successfully been ended"
+            },
+            "loading": {
+                "title": "Loading",
+                "message": "The giveaway is beïng ended"
+            }
+        },
+        "start": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to start a giveaway"
+            },
+            "missing-arguments": {
+                "title": "Missing arguments",
+                "message": "Please use the command like this: `[^PREFIX]giveaway start [PRIZE NAME] [LENGTH IN HOURS] [AMOUNT OF WINNERS]`"
+            },
+            "invalid-winners": {
+                "title": "Invalid winners",
+                "message": "The amount of winners must be a number between `1-10`"
+            },
+            "invalid-time": {
+                "title": "Invalid time",
+                "message": "The time must be between 1 minute and 14 days"
+            },
+            "invalid-price": {
+                "title": "Invalid prize",
+                "message": "The prize name must be at least 1 character long and can max be 100 characters long"
+            },
+            "embed": {
+                "title": "Giveaway",
+                "message": "Win **[^PRIZE]**!\n[^WINNERS] winner(s)\nEnds at: [^TIMESTAMP]\n\n**Requirements:**\n[^REQUIREMENTS]\n\nReact with 🥳 to participate",
+                "requirement": "> [^REQUIREMENT]",
+                "no-requirements": "None",
+                "requirements": {
+                    "options": {
+                        "invites": {
+                            "name": "Invites",
+                            "description": "Users with a certain amount of invites can participate"
+                        },
+                        "level": {
+                            "name": "Level",
+                            "description": "Users with a certain level can participate"
+                        },
+                        "messages": {
+                            "name": "Messages",
+                            "description": "Users with a certain amount of messages sent can participate"
+                        },
+                        "role": {
+                            "name": "Role",
+                            "description": "Users with a certain role can participate"
+                        }
+                    },
+                    "cancel-button": "Cancel",
+                    "choose-requirement": {
+                        "title": "Set requirements",
+                        "message": "Select in the select menu below which requirements you'd like to set for this giveaway."
+                    },
+                    "unknown-interaction": {
+                        "title": "Unknown interaction",
+                        "message": "The interaction was unknown, please try it again."
+                    },
+                    "invalid-requirements": {
+                        "title": "Invalid requirements",
+                        "message": "The requirements must be a number"
+                    },
+                    "role-not-found": {
+                        "title": "Role not found",
+                        "message": "The role you tried to add as a requirement was not found"
+                    },
+                    "missing-requirements": {
+                        "title": "You don't meet the requirements",
+                        "message": "You don't meet the requirement to participate to [this]([^GIVEAWAY_URL]) giveaway. You need to have [^REQUIREMENTS]"
+                    },
+                    "confirm-role": {
+                        "title": "Confirm requirement role",
+                        "message": "Please confirm you want to add [^ROLE] as the role users need to have to participate to this giveaway",
+                        "confirm": "Confirm",
+                        "cancel": "Cancel"
+                    },
+                    "cancel-role-requirement": {
+                        "title": "Cancelled action",
+                        "message": "The action to add the role [^ROLE] as a requirement for the giveaway has been cancelled"
+                    }
+                }
+            },
+            "end-embed": {
+                "title": "Giveaway ended",
+                "message": "Win **[^PRIZE]**!\n[^WINNERS] winner(s)\nEnded at: [^TIMESTAMP]\n\nWinners: [^GIVEAWAY_WINNERS]\n\nReact with 🥳 to participate",
+                "no-winners-text": "No winners"
+            },
+            "loading": {
+                "title": "Loading",
+                "message": "The giveaway is beïng started"
+            }
+        }
+    },
+    "level": {
+        "user-level-loading": {
+            "title": "Loading level",
+            "message": "Loading [USERNAME 2]'s level image..."
+        },
+        "user-not-found": {
+            "title": "User not found",
+            "message": "There was no such user found within this Discord server."
+        },
+        "invalid-canvas-type": {
+            "title": "Invalid canvas type",
+            "message": "The canvas type which has been set for this Discord server is invalid"
+        },
+        "user-level": {
+            "title": "[USERNAME 2]'s level"
+        },
+        "user-messages": {
+            "title": "[USERNAME 2]'s messages",
+            "message": "[USERNAME 2] has sent **[^MESSAGES]** messages"
+        },
+        "user-xp": {
+            "title": "[USERNAME 2]'s xp",
+            "message": "[USERNAME 2] has **[^XP]** xp"
+        },
+        "level-up-messages": [
+            "GG [USER], you just advanced to level [^LEVEL]!",
+            "Wow, [USER] is now level [^LEVEL]!",
+            "Congrats on becoming level [^LEVEL], [USER]!",
+            "Roses are red, I don't like the devil, [USER] reached a new level!",
+            "Welcome to level [^LEVEL] [USER]!",
+            "[USER], you've reached level [^LEVEL]!",
+            "Only cool people like [USER] reach level [^LEVEL]!",
+            "Thanks for not making me worthless [USER] by reaching level [^LEVEL]!"
+        ]
+    },
+    "moderation": {
+        "nickname": {
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to change this user's nickname"
+            },
+            "mention-user": {
+                "title": "Mention a member",
+                "message": "Please mention a member in order to change their nickname"
+            },
+            "unknown-error": {
+                "title": "Unknown error",
+                "message": "There was an unknown error while trying to change this user's nickname"
+            },
+            "changed-nickname": {
+                "title": "Changed nickname",
+                "message": "The nickname of [USER 2] has successfully been changed to `[^NEW_NICKNAME]`"
+            }
+        },
+        "unban": {
+            "no-reason": "No reason added | Unbanned by [USERNAME]",
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to unban this user"
+                },
+                "no-mention": {
+                    "title": "No user id mentioed",
+                    "message": "Please mention a user id to unban the user"
+                },
+                "not-banned": {
+                    "title": "User not banned",
+                    "message": "The user with the id `[^USER_ID]` has not been banned"
+                },
+                "error": {
+                    "title": "Failed to unban user",
+                    "message": "There was an error while trying to unban [USERNAME 2]"
+                }
+            },
+            "confirm": {
+                "title": "Please confirm your action",
+                "message": "Are you sure that you want to unban [USERNAME 2] for the reason: `[^REASON]`\nYou can't undo this action.",
+                "cancel-button": "Cancel",
+                "confirm-button": "Unban"
+            },
+            "success": {
+                "title": "User unbanned",
+                "message": "[USERNAME 2] has successfully been unbanned from [^GUILD] by [USERNAME] for the reason `[^REASON]`"
+            }
+        },
+        "bans": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to see the bans in this server"
+                },
+                "no-bans": {
+                    "title": "No bans",
+                    "message": "There are currently no users banned"
+                }
+            },
+            "bans-list": {
+                "title": "Bans",
+                "message": "Banned users:",
+                "list-item": "**[[^COUNT]]** [USERNAME 2] ([^USER_ID]) - Reason: `[^REASON]`"
+            }
+        },
+        "ban": {
+            "no-reason": "No reason added | Banned by [USERNAME]",
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to ban this user"
+                },
+                "no-mention": {
+                    "title": "No mention",
+                    "message": "Please mention a user to ban the user"
+                },
+                "unbannable": {
+                    "title": "User unbannable",
+                    "message": "I am not able to ban **[USERNAME 2]**"
+                },
+                "error": {
+                    "title": "Failed to ban user",
+                    "message": "There was an error while trying to ban [USERNAME 2]"
+                }
+            },
+            "ban-duration": {
+                "title": "Ban duration",
+                "message": "How long would you like to ban **[USERNAME 2]**",
+                "options": {
+                    "30m": "30 minutes",
+                    "1h": "1 hour",
+                    "2h": "2 hours",
+                    "12h": "12 hours",
+                    "1d": "1 day",
+                    "2d": "2 days",
+                    "1w": "1 week",
+                    "forever": "Forever",
+                    "cancel": "Cancel"
+                }
+            },
+            "confirm": {
+                "title": "Please confirm your action",
+                "message": "Are you sure that you want to ban **[USERNAME 2]** for the reason: `[^REASON]`\nYou can't undo this action.",
+                "cancel-button": "Cancel",
+                "confirm-button": "Ban"
+            },
+            "success": {
+                "title": "[USERNAME 2] has been banned",
+                "message": "[USERNAME 2] has successfully been banned from [^GUILD] by [USERNAME] for the reason `[^REASON]`"
+            }
+        },
+        "kick": {
+            "no-reason": "No reason added | Kicked by [USERNAME]",
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to kick this user"
+                },
+                "no-mention": {
+                    "title": "No mention",
+                    "message": "Please mention a user to kick the user"
+                },
+                "unkickable": {
+                    "title": "User unkickable",
+                    "message": "I am not able to kick **[USERNAME 2]**"
+                },
+                "error": {
+                    "title": "Failed to kick user",
+                    "message": "There was an error while trying to kick [USERNAME 2]"
+                }
+            },
+            "confirm": {
+                "title": "Please confirm your action",
+                "message": "Are you sure that you want to kick **[USERNAME 2]** for the reason: `[^REASON]`\nYou can't undo this action.",
+                "cancel-button": "Cancel",
+                "confirm-button": "Kick"
+            },
+            "success": {
+                "title": "[USERNAME 2] has been kicked",
+                "message": "[USERNAME 2] has successfully been kicked from [^GUILD] by [USERNAME] for the reason `[^REASON]`"
+            }
+        },
+        "lock": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to lock a channel"
+                },
+                "wrong-channel-type": {
+                    "title": "Wrong channel type",
+                    "message": "You can only lock a guild text channel"
+                },
+                "error": {
+                    "title": "Failed to lock channel",
+                    "message": "There was an error while trying to lock [^LOCK_CHANNEL]"
+                }
+            },
+            "success": {
+                "title": "Locked channel",
+                "message": "The channel [^LOCK_CHANNEL] has been locked for everyone"
+            }
+        },
+        "role": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to lock a channel"
+                },
+                "no-mention": {
+                    "title": "Invalid mentions",
+                    "message": "Please mention a member and a role to change the roles"
+                },
+                "role-higher": {
+                    "title": "Role is higher",
+                    "message": "The role in the role hierarchy is higher than your highest role"
+                },
+                "role-member-higher": {
+                    "title": "Member's role is higher",
+                    "message": "The highest role in the role hierarchy of the member is higher than your highest role"
+                },
+                "error": {
+                    "title": "Unknown error",
+                    "message": "There was an unknown error while trying to change the member's roles"
+                }
+            },
+            "success": {
+                "title": "Role [^ACTION]",
+                "message": "The [^ROLE_MENTION] has successfully been [^ACTION] [^TO_OR_FROM] [USERNAME 2]'s roles",
+                "to": "to",
+                "from": "from",
+                "actions": {
+                    "add": "added",
+                    "remove": "removed"
+                }
+            }
+        },
+        "embed":{
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to lock a channel"
+                },
+                "channel-not-found": {
+                    "title": "Channel not found",
+                    "message": "The channel which was provided was not found"
+                },
+                "unknown-error": {
+                    "title": "Unknown error",
+                    "message": "There was an unknown error while trying to send the embed"
+                },
+                "invalid-user": {
+                    "title": "Invalid user",
+                    "message": "You are not allowed to build this embed, please use the embed command to create one yourself"
+                },
+                "unknown-interaction": {
+                    "title": "Unknown interaction",
+                    "message": "The interaction is unknown, please try it again"
+                },
+                "invalid-url": {
+                    "title": "Invalid url",
+                    "message": "The url which was provided is an invalid url"
+                },
+                "invalid-image": {
+                    "title": "Invalid image",
+                    "message": "The provided image url is not an image"
+                },
+                "invalid-timestamp": {
+                    "title": "Invalid timestamp",
+                    "message": "The timestamp which was provided is an invalid timestamp"
+                },
+                "invalid-color": {
+                    "title": "Invalid color",
+                    "message": "The color must be a HEX color code"
+                }
+            },
+            "embed-build": {
+                "title": "Embed builder",
+                "message": "Click the buttons below to build your embed",
+                "buttons": {
+                    "set-text": "Set",
+                    "title": "Title",
+                    "description": "Description",
+                    "url": "URL",
+                    "thumbnail": "Thumbnail",
+                    "image": "Image",
+                    "author text": "Author text",
+                    "author image": "Author image",
+                    "color": "Color",
+                    "footer text": "Footer text",
+                    "footer image": "Footer image",
+                    "timestamp": "Timestamp",
+                    "send": "Send",
+                    "cancel": "Cancel"
+                }
+            },
+            "confirm-message": {
+                "title": "Confirm the action",
+                "message": "Please confirm that you want to send the embed in the channel [CHANNEL]"
+            },
+            "success": {
+                "title": "Embed sent",
+                "message": "The embed has successfully been sent in [CHANNEL]"
+            }
+        },
+        "react": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to create/delete a react message"
+                },
+                "invalid-action": {
+                    "title": "Invalid action",
+                    "message": "Please provide the action to perform (`create` or `delete`)"
+                },
+                "error": {
+                    "title": "Unknown error",
+                    "message": "There was an unknown error while trying to to create/delete a react message"
+                },
+                "unknown-interaction": {
+                    "title": "Unknown interaction",
+                    "message": "The interaction was unknown, please try it again."
+                }
+            },
+            "actions": {
+                "create": {
+                    "existing-message": {
+                        "title": "New message or existing",
+                        "message": "Do you want to create a new message for this reaction roles or use an existing message\n\nReact with the channel mention/id **and** message id, `[^NEW_TEXT]` or `[^CANCEL_TEXT]`"
+                    },
+                    "channel-select": {
+                        "title": "Select channel",
+                        "message": "Please send the channel mention or id where you want to send the role select message in\n\nReact with the channel mention/id or with `[^CANCEL_TEXT]`"
+                    },
+                    "select-type": {
+                        "title": "Select type of reaction",
+                        "message": "Do you want people to click a button or react with an emoji\n\nReact with `[^BUTTON_TEXT]`, `[^EMOJI_TEXT]`, `[^SELECT_MENU_TEXT]` or with `[^CANCEL_TEXT]`"
+                    },
+                    "select-emoji": {
+                        "title": "Select emoji",
+                        "message": "Please send the emoji people should react with to get the role\n\nReact with the emoji or with `[^CANCEL_TEXT]`"
+                    },
+                    "select-role": {
+                        "title": "Select role",
+                        "message": "Please select the role by mentioning it, sending it's id or name\n\nReact with the role or with `[^CANCEL_TEXT]`"
+                    },
+                    "button-text": {
+                        "title": "Button text",
+                        "message": "Please send the button text to create the button\n\nReact with the button text or with `[^CANCEL_TEXT]`"
+                    },
+                    "button-color": {
+                        "title": "Button color",
+                        "message": "Please send the button color\n\nReact with `[^BLURPLE_COLOR]`, `[^GRAY_COLOR]`, `[^GREEN_COLOR]`, `[^RED_COLOR]` or `[^CANCEL_TEXT]`"
+                    },
+                    "select-menu-name-option": {
+                        "title": "Select menu option name",
+                        "message": "Please send the name for the select menu option\n\nReact with the name for the select menu option or with [^CANCEL_TEXT]"
+                    },
+                    "select-menu-description-option": {
+                        "title": "Select menu option description",
+                        "message": "Please send the description for the select menu option\n\nReact with the description for the select menu option or with cancel"
+                    },
+                    "reaction-created": {
+                        "title": "Reaction created",
+                        "message": "The reaction has successfully been created, you can find it [here]([^MESSAGE_URL])"
+                    },
+                    "confirm-message": {
+                        "title": "Confirm your action",
+                        "message": "Do you want to create a new reaction role message where members need to react with [^A_AN] [^ACTION_TYPE] for the role [^ROLE_MENTION]?",
+                        "a": "a",
+                        "an": "an",
+                        "button": "button",
+                        "emoji": "emoji",
+                        "option": "option",
+                        "confirm": "Confirm",
+                        "cancel": "Cancel"
+                    }
+                },
+                "delete": {
+                    "delete-action": {
+                        "title": "Delete message or reaction",
+                        "message": "Do you want to delete the message or a single reaction of the message\n\nReact with `[^MESSAGE_TEXT]`, `[^REACTION_TEXT]` or `[^CANCEL_TEXT]`"
+                    },
+                    "provide-message-id": {
+                        "title": "Message id",
+                        "message": "Please provide the message id of the reaction role message\n\nReact with the message id or with `[^CANCEL_TEXT]`"
+                    },
+                    "message-deleted": {
+                        "title": "Message deleted",
+                        "message": "The reaction message has successfully been deleted"
+                    },
+                    "select-role": {
+                        "title": "Select the role",
+                        "message": "Please select the role which you want to delete from the reaction message by sending the mention, it's id or name\n\nReact with the role or with `[^CANCEL_TEXT]`"
+                    },
+                    "role-removed": {
+                        "title": "Role removed",
+                        "message": "The role [^ROLE_MENTION] has successfully been removed from the [reaction message]([^MESSAGE_URL])"
+                    }
+                },
+                "error-messages": {
+                    "aborted-time": {
+                        "title": "Action aborted",
+                        "message": "The action to [^ACTION] a react message was aborted as there were no reactions received by [USER] within 3 minutes"
+                    },
+                    "unknown-action": {
+                        "title": "Unknown action",
+                        "message": "An unknown action was provided to [^ACTION] a react message"
+                    },
+                    "invalid-reply": {
+                        "title": "Invalid reply",
+                        "message": "An invalid reply was provided, the action was aborted"
+                    },
+                    "channel-not-found": {
+                        "title": "Channel not found",
+                        "message": "The channel which was provided was not found"
+                    },
+                    "message-not-found": {
+                        "title": "Message not found",
+                        "message": "The message which was provided was not found"
+                    },
+                    "invalid-emoji": {
+                        "title": "Invalid emoji",
+                        "message": "The emoji which was provided is invalid"
+                    },
+                    "role-not-found": {
+                        "title": "Role not found",
+                        "message": "The role you were looking for was not found"
+                    },
+                    "button-in-use": {
+                        "title": "Button already in use",
+                        "message": "There is already another button with the same text"
+                    },
+                    "emoji-in-use": {
+                        "title": "Emoji is already in use",
+                        "message": "The emoji is already used for another reaction"
+                    },
+                    "role-in-use": {
+                        "title": "Role is already in use",
+                        "message": "The role is already in use for another reaction/button"
+                    },
+                    "max-buttons": {
+                        "title": "Max buttons reached",
+                        "message": "The max amount of buttons has been reached, you can not add any buttons to this message anymore"
+                    },
+                    "button-not-bot": {
+                        "title": "Author is not me",
+                        "message": "Buttons can only be added to messages from where the author is [CLIENT TAG] as I can only add buttons on my own messages"
+                    },
+                    "max-options-select-menu": {
+                        "title": "Max select menu options reached",
+                        "message": "You've already reached the max amount of select menu options. Remove one before adding a new one."
+                    },
+                    "invalid-select-menu-name": {
+                        "title": "Invalid select menu option name",
+                        "message": "The name for the select menu option must be between 0-100 and may only contain letters, numbers and spaces"
+                    },
+                    "invalid-select-menu-description": {
+                        "title": "Invalid select menu option description",
+                        "message": "The description for the select menu option must be between 0-100 and may only contain letters, numbers and spaces"
+                    }
+                },
+                "cancel": {
+                    "title": "Action cancelled",
+                    "message": "The action to [^ACTION] a react message was cancelled"
+                },
+                "text": {
+                    "new": "new",
+                    "no": "no",
+                    "cancel": "cancel",
+                    "button": "button",
+                    "emoji": "emoji",
+                    "selectmenu": "selectmenu",
+                    "blurple": "blurple",
+                    "gray": "gray",
+                    "green": "green",
+                    "red": "red",
+                    "message": "message",
+                    "reaction": "reaction"
+                },
+                "confirmation-messages": {
+                    "role-added": {
+                        "title": "Role added",
+                        "message": "The role has successfully been added to your roles"
+                    },
+                    "role-removed": {
+                        "title": "Role removed",
+                        "message": "The role has successfully been removed from your roles"
+                    },
+                    "error": {
+                        "title": "Error",
+                        "message": "There was an error while trying to change your roles"
+                    }
+                }
+            }
+        },
+        "unlock": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to unlock a channel"
+                },
+                "wrong-channel-type": {
+                    "title": "Wrong channel type",
+                    "message": "You can only unlock a guild text channel"
+                },
+                "error": {
+                    "title": "Failed to unlock channel",
+                    "message": "There was an error while trying to unlock [^UNLOCK_CHANNEL]"
+                }
+            },
+            "success": {
+                "title": "Unlocked channel",
+                "message": "The channel [^UNLOCK_CHANNEL] has been unlocked for everyone"
+            }
+        },
+        "slowmode": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to rename a channel"
+                },
+                "invalid-time": {
+                    "title": "Invalid time",
+                    "message": "Please set the time between 0 seconds and 6 hours"
+                },
+                "error": {
+                    "title": "Failed to set slowmode",
+                    "message": "There was an error while trying to set the slowmode for [CHANNEL]"
+                }
+            },
+            "success": {
+                "title": "Slowmode changed",
+                "message": "The slowmode for the channel [CHANNEL] has successfully been set to [^TIME]"
+            }
+        },
+        "rename": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to rename a channel"
+                },
+                "no-name": {
+                    "title": "Provide a name",
+                    "message": "Please provide a name for the channel"
+                },
+                "error": {
+                    "title": "Failed to rename channel",
+                    "message": "There was an error while trying to rename [CHANNEL]"
+                }
+            },
+            "success": {
+                "title": "Channel renamed",
+                "message": "The channel [CHANNEL] has successfully been renamed to `[CHANNEL NAME]`"
+            }
+        },
+        "say": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to let the bot say something"
+                },
+                "no-text": {
+                    "title": "Provide a text",
+                    "message": "Please provide the text the bot has to say"
+                }
+            }
+        },
+        "clear": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to clear messages in this channel"
+                },
+                "no-amount": {
+                    "title": "No amount of messages",
+                    "message": "Please add the amount of messages you want to delete in this channel"
+                },
+                "invalid-number": {
+                    "title": "Invalid number",
+                    "message": "The amount of messages you want to delete should be a number between `1-99`"
+                },
+                "error": {
+                    "title": "Error",
+                    "message": "There was an error while trying to clear [^MESSAGES] messages in [CHANNEL]"
+                }
+            },
+            "success": {
+                "title": "Cleared messages",
+                "message": "[^MESSAGES] messages have been cleared in [CHANNEL]"
+            }
+        },
+        "mute": {
+            "no-reason": "No reason added | Muted by [USERNAME]",
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to mute this user"
+                },
+                "no-mention": {
+                    "title": "No mention",
+                    "message": "Please mention a user to mute the user"
+                },
+                "unmuteable": {
+                    "title": "User unmuteable",
+                    "message": "I am not able to mute **[USERNAME 2]**"
+                },
+                "error": {
+                    "title": "Failed to mute user",
+                    "message": "There was an error while trying to mute [USERNAME 2]"
+                },
+                "unknown-interaction": {
+                    "title": "Unknown interaction",
+                    "message": "The interaction is unknown, please try it again"
+                },
+                "no-permissions-2": {
+                    "title": "No permissions",
+                    "message": "You have no permissions to warn this user"
+                }
+            },
+            "menu": {
+                "placeholder": "No time selected",
+                "title": "Mute [USERNAME 2]",
+                "message": "Please select a time to mute [USERNAME 2]"
+            },
+            "mute-options": {
+                "1-minute": "1 minute",
+                "5-minutes": "5 minutes",
+                "10-minutes": "10 minutes",
+                "1-hour": "1 hour",
+                "2-hour": "2 hours",
+                "5-hour": "5 hours",
+                "1-day": "1 day",
+                "2-day": "2 days",
+                "4-day": "4 days",
+                "5-day": "5 days",
+                "1-week": "1 week",
+                "cancel-option": "Cancel this option",
+                "cancel-label": "Cancel",
+                "time-text": "Mute [USERNAME 2] for [^TIME]"
+            },
+            "success": {
+                "title": "[USERNAME 2] has been muted",
+                "message": "[USERNAME 2] has successfully been muted by [USERNAME] for [^TIME] for the reason `[^REASON]`"
+            }
+        },
+        "unmute": {
+            "no-reason": "No reason added | Unmuted by [USERNAME]",
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to unmute this user"
+                },
+                "no-mention": {
+                    "title": "No mention",
+                    "message": "Please mention a user to unmute the user"
+                },
+                "unmuteable": {
+                    "title": "Unable to unmute",
+                    "message": "I am not able to unmute **[USERNAME 2]**"
+                },
+                "error": {
+                    "title": "Failed to unmute user",
+                    "message": "There was an error while trying to unmute [USERNAME 2]"
+                },
+                "not-muted": {
+                    "title": "Not muted",
+                    "message": "[USERNAME 2] is not muted"
+                }
+            },
+            "success": {
+                "title": "[USERNAME 2] has been unmuted",
+                "message": "[USERNAME 2] has successfully been unmuted by [USERNAME] for the reason `[^REASON]`"
+            }
+        },
+        "unwarn": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to unwarn this user"
+                },
+                "no-mention": {
+                    "title": "No mention",
+                    "message": "Please mention a user to unwarn the user"
+                },
+                "no-warnings": {
+                    "title": "No warnings",
+                    "message": "[USERNAME 2] has no warnings"
+                },
+                "unknown-interaction": {
+                    "title": "Unknown interaction",
+                    "message": "The interaction is unknown, please try it again"
+                },
+                "no-permissions-2": {
+                    "title": "No permissions",
+                    "message": "You have no permissions to unwarn this user"
+                }
+            },
+            "menu": {
+                "placeholder": "No warning selected",
+                "title": "Select a warning",
+                "message": "Select a warning to unwarn [USERNAME 2]",
+                "select": "Warned by [^WARNER] on [^DATE]",
+                "unknown-warner": "Unknown user",
+                "unknown-date": "Unknown date",
+                "label": "[^NUMBER] [^REASON]"
+            },
+            "success": {
+                "title": "[USERNAME 2] has been unwarned",
+                "message": "[USER 2] who was warned for the reason `[^REASON]` by [^WARNER] has been unwarned"
+            }
+        },
+        "userinfo": {
+            "message": {
+                "title": "User info",
+                "message": "> ✉️ Messages: [^MESSAGES]\n> 🚶 Joins: [^JOINS]\n> 👢 Kicks: [^KICKS]\n> 🔨 Bans: [^BANS]\n> 🔇 Mutes: [^MUTES]\n> 🔗 Invites: [^INVITES]\n> 👋 Invited users left: [^INVITELEAVES]\n> 🔗 Total invites: [^TOTALINVITES]"
+            },
+            "no-permissions": {
+                "title": "No permissions",
+                "message": "You need the permission `[^PERMISSIONS]` to see this user's information"
+            }
+        },
+        "warn": {
+            "no-reason": "No reason added | Warned by [USERNAME]",
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` to warn this user"
+                },
+                "no-mention": {
+                    "title": "No mention",
+                    "message": "Please mention a user to warn the user"
+                },
+                "unwarnable": {
+                    "title": "User unwarnable",
+                    "message": "I am not able to warn [USERNAME 2]"
+                },
+                "max-warns": {
+                    "title": "Max warns",
+                    "message": "[USERNAME 2] has too many warnings, the max amount of warnings is 10"
+                }
+            },
+            "warn-duration": {
+                "title": "Warn duration",
+                "message": "Please select for how long the warn should be valid",
+                "options": {
+                    "30m": "30 minutes",
+                    "1h": "1 hour",
+                    "2h": "2 hours",
+                    "12h": "12 hours",
+                    "1d": "1 day",
+                    "2d": "2 days",
+                    "1w": "1 week",
+                    "forever": "Forever",
+                    "cancel": "Cancel"
+                }
+            },
+            "success": {
+                "title": "User warned",
+                "message": "[USERNAME 2] has successfully been warned by [USERNAME] for the following reason: `[^REASON]`"
+            },
+            "dm-message": {
+                "title": "You got warned",
+                "message": "A moderator from the server [^GUILD] has warned you for the following reason: `[^REASON]`"
+            }
+        },
+        "warns": {
+            "error-messages": {
+                "no-permissions": {
+                    "title": "No permissions",
+                    "message": "You need the permission `[^PERMISSIONS]` see this user's warns"
+                },
+                "no-mention": {
+                    "title": "No mention",
+                    "message": "Please mention a user to see their user warns"
+                }
+            },
+            "no-warns-text": "No warnings",
+            "warn": "[[^NUMBER]] [^REASON] - Warned by [USERNAME]",
+            "unknown-user": "Unknown user",
+            "title": "Warns from [USERNAME 2]"
+        }
+    },
+    "music-cmds": {
+        "not-connected-embed": {
+            "title": "Not connected",
+            "message": "I am not connected to any voice channel, please join a voice channel to connect me"
+        },
+        "shuffle": {
+            "title": "Queue shuffled",
+            "message": "The queue has successfully been shuffled"
+        },
+        "filters": {
+            "ffmpeg-not-installed": {
+                "title": "FFmpeg is not installed",
+                "message": "Since FFmpeg is not installed, this feature cannot be used for this bot"
+            },
+            "no-filter-provided": {
+                "title": "No filter provided",
+                "message": "Please provide a filter to add or remove it"
+            },
+            "invalid-filter": {
+                "title": "Invalid filter",
+                "message": "The chosen filter is an invalid filter. Please provide a valid filter"
+            },
+            "filter-applied": {
+                "title": "Filter applied",
+                "message": "The filter has been applied to the song"
+            },
+            "handle": {
+                "title": "Handling command",
+                "message": "The command is being handled..."
+            },
+            "failed-change": {
+                "title": "Error",
+                "message": "There was an unknown error while trying to apply the changes"
+            }
+        },
+        "loop-embeds": {
+            "loop": {
+                "title": "Loop enabled",
+                "message": "The loop has been enabled in [CHANNEL]"
+            },
+            "queueloop": {
+                "title": "Queue loop enabled",
+                "message": "The queue loop has been enabled in [CHANNEL]"
+            },
+            "unloop": {
+                "title": "Loop disabled",
+                "message": "The loop has been disabled in [CHANNEL]"
+            }
+        },
+        "pause-embed": {
+            "title": "Paused",
+            "message": "The queue in [CHANNEL] has been paused"
+        },
+        "resume-embed": {
+            "title": "Resumed",
+            "message": "The queue in [CHANNEL] is playing again"
+        },
+        "play-embeds": {
+            "error-embeds": {
+                "no-song-added": {
+                    "title": "No song added",
+                    "message": "Please provide a song to play it in a voice channel"
+                },
+                "not-a-song": {
+                    "title": "URL not a song",
+                    "message": "The provided url is not a song"
+                },
+                "no-result": {
+                    "title": "No results",
+                    "message": "There were no results found for the query `[ADDITIONAL TEXT]`"
+                },
+                "unknown-error": {
+                    "title": "Error",
+                    "message": "There was an unknown error while trying to play the song"
+                },
+                "unplayable-url": {
+                    "title": "Error",
+                    "message": "This song is not a playable song."
+                },
+                "video-too-long": {
+                    "title": "Video too long",
+                    "message": "The video may max be 10 hours long"
+                },
+                "soundcloud-playlist-not-supported": {
+                    "title": "Not supported",
+                    "message": "SoundCloud playlists are not supported"
+                }
+            },
+            "success-embeds": {
+                "yt-embed": {
+                    "title": "Playing [^TITLE]",
+                    "message": "**[^TITLE]** by [[^AUTHOR]]([^AUTHOR_URL]) has been added to the queue",
+                    "fields": [{
+                        "name": "Duration",
+                        "value": "[^DURATION]",
+                        "inline": true
+                    }, {
+                        "name": "Views",
+                        "value": "[^VIEWS]",
+                        "inline": true
+                    }, {
+                        "name": "Uploaded",
+                        "value": "[^UPLOADED]",
+                        "inline": true
+                    }]
+                },
+                "playlist-added": {
+                    "title": "Playlist added",
+                    "message": "**[[^PLAYLIST_NAME]]([^PLAYLIST_URL])** by **[[^AUTHOR]]([^AUTHOR_URL])** has been added to the queue"
+                },
+                "non-yt-embed": {
+                    "title": "Playing song",
+                    "message": "The [^SONG] has been added to the queue"
+                }
+            },
+            "handle-play": {
+                "title": "Handling command",
+                "message": "The command is being handled..."
+            },
+            "song-text": "Song"
+        },
+        "now-playing": {
+            "title": "[^TITLE]",
+            "message": "[^PROGRESS_BAR]",
+            "fields": [{
+                "name": "🔊 Volume",
+                "value": "[^VOLUME]",
+                "inline": true
+            }, {
+                "name": "⌛ Length",
+                "value": "[^LENGTH]",
+                "inline": true
+            }, {
+                "name": "🎶 Queue",
+                "value": "[^QUEUE] songs",
+                "inline": true
+            }, {
+                "name": "⏸️ Paused",
+                "value": "[^PAUSED]",
+                "inline": true
+            }, {
+                "name": "🔁 Loop",
+                "value": "[^LOOP]",
+                "inline": true
+            }, {
+                "name": "🎚️ Filters",
+                "value": "[^FILTERS]",
+                "inline": true
+            }],
+            "loop": {
+                "disabled": "Disabled",
+                "song-loop": "Song loop",
+                "queue-loop": "Queue loop"
+            },
+            "paused": {
+                "no": "No",
+                "yes": "Yes"
+            }
+        },
+        "queue-embed": {
+            "title": "Queue",
+            "message": "Songs: [^QUEUE]",
+            "queue-title": "\n**[[^NUMBER]]** [[^TITLE]]([^URL])",
+            "queue-url": "\n**[[^NUMBER]]** [^URL]"
+        },
+        "skip-embeds": {
+            "success": {
+                "title": "Skipped",
+                "message": "[^SONG] in [CHANNEL] has been skipped"
+            },
+            "error": {
+                "title": "Failed to skip song",
+                "message": "There was an error while trying to skip [^SONG]"
+            },
+            "a-song-text": "A [song]([^URL])"
+        },
+        "previous-embeds": {
+            "success": {
+                "title": "Playing previous song",
+                "message": "[^SONG] is now being played in [CHANNEL] again"
+            },
+            "error": {
+                "title": "Failed to play previous song",
+                "message": "There was an error while trying to play the previous song"
+            },
+            "a-song-text": "A [song]([^URL])"
+        },
+        "stop-embed": {
+            "title": "Stopped",
+            "message": "I stopped playing music in [CHANNEL]"
+        },
+        "volume-embeds": {
+            "ffmpeg-not-installed": {
+                "title": "FFmpeg is not installed",
+                "message": "Since FFmpeg is not installed, this feature cannot be used for this bot"
+            },
+            "no-volume-provided": {
+                "title": "No volume provided",
+                "message": "Please provide the volume in the command (between `1-10`)"
+            },
+            "invalid-volume": {
+                "title": "Invalid volume",
+                "message": "The volume must be a number between `1-10`"
+            },
+            "volume-changed": {
+                "title": "Volume changed",
+                "message": "The volume in [CHANNEL] has successfully been changed to `[^VOLUME]`"
+            }
+        }
+    },
+    "fun": {
+        "quote": {
+            "invalid-message-id": {
+                "title": "Invalid message id",
+                "message": "The provided message id is not a valid message id."
+            },
+            "message-not-exists": {
+                "title": "Message does not exist",
+                "message": "The message you're looking for doesn't exist in the channel [CHANNEL]."
+            },
+            "no-content": {
+                "title": "No message content",
+                "message": "There is no message content to quote."
+            },
+            "unknown-error": {
+                "title": "Unknown error",
+                "message": "There was an unknown error while generating the quote image."
+            },
+            "loading": {
+                "title": "Loading quote message",
+                "message": "The quote message is being generated..."
+            }
+        },
+        "tictactoe": {
+            "multiplayer": {
+                "waiting-for-2nd-player": {
+                    "title": "Waiting for a second player",
+                    "message": "Please wait for a second player to join the tic tac toe match."
+                },
+                "no-2nd-player-found": {
+                    "title": "No second player found",
+                    "message": "No one responded within 3 minutes to start a game."
+                },
+                "starting-multiplayer": {
+                    "title": "Tic Tac Toe",
+                    "message": "[USER] vs. [USER 2]\n[^USER_TURN]'s turn\n\nReact with the buttons below to play tic tac toe"
+                },
+                "won": {
+                    "title": "Player [^PLAYER] won",
+                    "message": "[^WINNER] won a tictactoe game from [^LOSER]"
+                },
+                "draw": {
+                    "title": "You played a tie",
+                    "message": "You played a tie against the each other"
+                }
+            },
+            "playing": {
+                "title": "Still in a tic tac toe game",
+                "message": "You are still in a tic tac toe game, end your [current game]([^URL]) to start a new one"
+            },
+            "starting": {
+                "title": "Tic Tac Toe",
+                "message": "React with the buttons below to play tic tac toe"
+            },
+            "won": {
+                "title": "You won",
+                "message": "You won the tic tac toe game from the bot"
+            },
+            "lost": {
+                "title": "You lost",
+                "message": "The bot won the tic tac toe game from you"
+            },
+            "draw": {
+                "title": "You played a tie",
+                "message": "You played a tie against the bot"
+            }
+        },
+        "kiss": {
+            "no-mention": {
+                "title": "No mention",
+                "message": "You need to mention someone to kiss someone"
+            },
+            "unknown-error": {
+                "title": "Unknown error",
+                "message": "There was an unknown error while trying to get an image"
+            },
+            "kiss": {
+                "title": "[USERNAME] kissed [USERNAME 2]"
+            }
+        },
+        "flip": {
+            "choose": {
+                "title": "Choose a side",
+                "message": "Choose between heads or tails to flip a coin"
+            },
+            "result": {
+                "title": "You [^STATUS]",
+                "message": "The coin landed on [^RANDOM_SIDE]\nYou choose [^USER_SIDE]\nYou **[^STATUS]**",
+                "status": {
+                    "won": "Won",
+                    "lost": "Lost"
+                }
+            }
+        },
+        "slap": {
+            "no-mention": {
+                "title": "No mention",
+                "message": "You need to mention someone to slap someone"
+            },
+            "unknown-error": {
+                "title": "Unknown error",
+                "message": "There was an unknown error while trying to get an image"
+            },
+            "slap": {
+                "title": "[USERNAME] slapped [USERNAME 2]"
+            }
+        },
+        "hug": {
+            "no-mention": {
+                "title": "No mention",
+                "message": "You need to mention someone to hug someone"
+            },
+            "unknown-error": {
+                "title": "Unknown error",
+                "message": "There was an unknown error while trying to get an image"
+            },
+            "hug": {
+                "title": "[USERNAME] hugged [USERNAME 2]"
+            }
+        },
+        "rps": {
+            "multiplayer-join": {
+                "title": "Waiting for a second player",
+                "message": "Please wait for a second player to join the rock paper scissors match."
+            },
+            "no-2nd-player-found": {
+                "title": "No second player found",
+                "message": "No one responded within 3 minutes to start a game."
+            },
+            "start": {
+                "title": "Rock paper scissors",
+                "message": "Play rock paper scissors with the bot\n\nPress one of the buttons below to play"
+            },
+            "start-multiplayer": {
+                "title": "Rock paper scissors",
+                "message": "Play rock paper scissors with each other\n[USER] vs. [USER 2]\n\nPress one of the buttons below to play"
+            },
+            "waiting-for-response": {
+                "title": "Rock paper scissors",
+                "message": "[USER] has made a choice. Waiting for [USER 2]."
+            },
+            "end": {
+                "title": "Rock paper scissors",
+                "message": "You've chosen [^USER_EMOJI]\nThe bot has chosen [^BOT_EMOJI]\n\n[^STATUS]",
+                "equal-text": "It's a draw",
+                "won-text": "You've won",
+                "lost-text": "You've lost"
+            },
+            "end-multiplayer": {
+                "title": "Rock paper scissors",
+                "message": "[USER] choose [^USER_EMOJI_1]\n[USER 2] choose [^USER_EMOJI_2]\n\n[^STATUS]",
+                "won": "[^WINNER] won",
+                "equal": "It's a draw"
+            }
+        },
+        "8ball": {
+            "response": [
+                "No",
+                "Yep",
+                "Maybe",
+                "Absolutely... not",
+                "Yes",
+                "You're wrong",
+                "Not today",
+                "We'll see",
+                "Later maybe",
+                "Absolutely yes",
+                "Nope",
+                "I don't know"
+            ],
+            "embed": {
+                "title": "Magic 8ball",
+                "message": "The answer on your question\n`[^QUESTION]`\n\n`[^ANSWER]`"
+            },
+            "no-question": {
+                "title": "No question provided",
+                "message": "Please provide a question to get an answer to it"
+            }
+        },
+        "meme": {
+            "unknown-error": {
+                "title": "Unknown error",
+                "message": "There was an unknown error while trying to "
+            },
+            "meme-embed": {
+                "title": "[^MEME_TITLE]",
+                "message": "Upvotes: [^MEME_UPVOTES]\nDownvotes: [^MEME_DOWNVOTES]\nAuthor: [^AUTHOR]"
+            }
+        }
+    },
+    "admin-commands": {
+        "no-permissions": {
+            "title": "No permissions",
+            "message": "You need the permission [^PERMISSIONS] in order to use this command"
+        },
+        "onlySlash": {
+            "title": "Only slash command",
+            "message": "You can only perform this action with the slash command"
+        }
+    },
+    "welcomeEmbed": {
+        "tag": true,
+        "title": "Welcome [USERNAME]",
+        "message": "Welcome [USER] to [^SERVERNAME]! You are the [^MEMBERCOUNT]th member of this server! We hope you will enjoy it here.",
+        "author-embed": ["user", "bot", null]
+    },
+    "welcomeMessage": "Welcome [USER] to [^SERVERNAME]! You are the [^MEMBERCOUNT]th member of this server! We hope you will enjoy it here.",
+    "leaveEmbed": {
+        "title": "Bye [USERNAME]",
+        "message": "[USERNAME] has left [^SERVERNAME]! We now have [^MEMBERCOUNT] members in this server!",
+        "author-embed": ["user", "bot", null]
+    },
+    "leaveMessage": "[USERNAME] has left [^SERVERNAME]! We now have [^MEMBERCOUNT] members in this server!",
+    "countingReaction": "✅",
+    "countingDelete": "[USER] tried to delete their number, the next number is **[^NUMBER]**",
+    "countingEdit": "[USER] tried to edit their number, the next number is **[^NUMBER]**",
+    "snakeReaction": "✅",
+    "snakeDelete": "[USER] tried to delete their word, the next letter is **[^LETTER]**",
+    "snakeEdit": "[USER] tried to edit their word, the next letter is **[^LETTER]**",
+    "commandDisabled": {
+        "title": "Command disabled",
+        "message": "This command has been disabled by the owner of this bot"
+    },
+    "filters": {
+        "url": "[USER], URL's are not allowed",
+        "invite": "[USER], Invite links are not allowed",
+        "badword": "[USER], your message contained a bad word"
+    },
+    "logs": {
+        "kick": {
+            "title": "[USERNAME] got kicked",
+            "message": "User: [USERNAME]\n> **Kicks:** [^KICKS]\n> **Reason:** `[^REASON]`\n> **Executor:** [USERNAME 2]\n> **Kicked at:** [^KICKED_AT]"
+        },
+        "ban": {
+            "title": "[USERNAME] got banned",
+            "message": "User: [USERNAME]\n> **Bans:** [^BANS]\n> **Reason:** `[^REASON]`\n> **Executor:** [USERNAME 2]\n> **Banned at:** [^BANNED_AT]"
+        },
+        "channel-delete": {
+            "title": "[CHANNEL NAME] deleted",
+            "message": "Channel: [CHANNEL NAME]\n> **Executor:** [USER]\n> **Channel Type:** [^CHANNEL_TYPE]\n> **Created at:** [^CREATED_CHANNEL]"
+        },
+        "channel-create": {
+            "title": "[CHANNEL NAME] created",
+            "message": "Channel: [CHANNEL NAME]\n> **Executor:** [USER]\n> **Channel Type:** [^CHANNEL_TYPE]\n> **Created at:** [^CREATED_CHANNEL]"
+        },
+        "channelUpdate": {
+            "title": "'[CHANNEL NAME]' got updated",
+            "message": "> **Channel:** [CHANNEL]\n> **Executor:** [USER]",
+            "fields": [{
+                "name": "Old name",
+                "value": "`[^OLD_CHANNEL_NAME]`",
+                "inline": true
+            }, {
+                "name": "New name",
+                "value": "`[^NEW_CHANNEL_NAME]`",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old topic",
+                "value": "`[^OLD_TOPIC]`",
+                "inline": true
+            }, {
+                "name": "New topic",
+                "value": "`[^NEW_TOPIC]`",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old position",
+                "value": "[^OLD_POSITION]",
+                "inline": true
+            }, {
+                "name": "New position",
+                "value": "[^NEW_POSITION]",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old custom permissions",
+                "value": "[^OLD_PERMISSIONS] members/roles",
+                "inline": true
+            }, {
+                "name": "New custom permissions",
+                "value": "[^NEW_PERMISSIONS] members/roles",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old NSFW status",
+                "value": "[^OLD_NSFW]",
+                "inline": true
+            }, {
+                "name": "New NSFW status",
+                "value": "[^NEW_NSFW]",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }],
+            "text": {
+                "nsfw-enabled": "Enabled",
+                "nsfw-disabled": "Disabled",
+                "no-topic": "No topic"
+            }
+        },
+        "mute": {
+            "title": "[USERNAME] has been muted",
+            "message": "User: [USER]\n> **Mutes:** [^MUTES]\n> **Reason:** `[^REASON]`\n> **Muted until:** [^MUTE_END]\n> **Executor:** [USER 2]\n> **Muted at:** [^MUTE_CREATE]"
+        },
+        "unmute": {
+            "title": "[USERNAME] has been unmuted",
+            "message": "User: [USER]\n> **Mutes:** [^MUTES]\n> **Reason:** `[^REASON]`\n> **Was muted until:** [^MUTE_END]\n> **Executor:** [USER 2]\n> **Unmuted at:** [^UNMUTE_CREATE]"
+        },
+        "message-delete": {
+            "title": "[USERNAME]'s message got deleted",
+            "message": "User: [USER]\n> **Messages:** [^MESSAGES]\n> **Message ID:** [^MESSAGE_ID]\n> **Channel:** [CHANNEL]\n> **Content:** `[^MESSAGE_CONTENT]`\n> **Embeds:** [^EMBEDS_AMOUNT]\n> **Attachments:** [^ATTACHMENTS_AMOUNT]\n> **Executor:** [USER 2]"
+        },
+        "message-update": {
+            "title": "[USERNAME] updated their message",
+            "message": "User: [USER]\n> **Messages:** [^MESSAGES]\n> **Message ID:** [^MESSAGE_ID]\n> **Channel:** [CHANNEL]\n> **Message**: [Click here]([^MESSAGE_URL])",
+            "fields": [{
+                "name": "Old content",
+                "value": "`[^OLD_CONTENT]`",
+                "inline": true
+            }, {
+                "name": "New content",
+                "value": "`[^NEW_CONTENT]`",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old embeds",
+                "value": "[^OLD_EMBEDS_AMOUNT]",
+                "inline": true
+            }, {
+                "name": "New embeds",
+                "value": "[^NEW_EMBEDS_AMOUNT]",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old attachments",
+                "value": "[^OLD_ATTACHMENTS_AMOUNT]",
+                "inline": true
+            }, {
+                "name": "New attachments",
+                "value": "[^NEW_ATTACHMENTS_AMOUNT]",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }]
+        },
+        "roleCreate": {
+            "title": "'[^ROLE_NAME]' created",
+            "message": "> **Role:** [^ROLE_MENTION]\n> **Executor:** [USER]\n> **Role name:** [^ROLE_NAME]\n> **Color:** `[^ROLE_COLOR]`\n> **Role bitfield:** `[^ROLE_BITFIELD]`\n> **Icon:** [^ROLE_ICON]"
+        },
+        "roleUpdate": {
+            "title": "'[^NEW_ROLE_NAME]' got updated",
+            "message": "> **Role:** [^ROLE_MENTION]\n> **Executor:** [USER]",
+            "fields": [{
+                "name": "Old name",
+                "value": "`[^OLD_ROLE_NAME]`",
+                "inline": true
+            }, {
+                "name": "New name",
+                "value": "`[^NEW_ROLE_NAME]`",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old color",
+                "value": "`[^OLD_ROLE_COLOR]`",
+                "inline": true
+            }, {
+                "name": "New color",
+                "value": "`[^NEW_ROLE_COLOR]`",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old bitfield",
+                "value": "`[^OLD_ROLE_BITFIELD]`",
+                "inline": true
+            }, {
+                "name": "New bitfield",
+                "value": "`[^NEW_ROLE_BITFIELD]`",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }, {
+                "name": "Old icon",
+                "value": "[^OLD_ROLE_ICON]",
+                "inline": true
+            }, {
+                "name": "New icon",
+                "value": "[^NEW_ROLE_ICON]",
+                "inline": true
+            }, {
+                "name": "‎",
+                "value": "‎",
+                "inline": true
+            }],
+            "text": {
+                "none": "None"
+            }
+        },
+        "roleDelete": {
+            "title": "'[^ROLE_NAME]' deleted",
+            "message": "> **Executor:** [USER]\n> **Role name:** [^ROLE_NAME]\n> **Color:** `[^ROLE_COLOR]`\n> **Role bitfield:** `[^ROLE_BITFIELD]`\n> **Icon:** [^ROLE_ICON]"
+        },
+        "join": {
+            "title": "[USERNAME] joined [^GUILD_NAME]",
+            "message": "User: [USER]\n> **Joins:** [^JOINS]\n> **Joined at:** [^JOINED_AT]\n> **Account created:** [^ACCOUNT_CREATED]"
+        },
+        "leave": {
+            "title": "[USERNAME] left [^GUILD_NAME]",
+            "message": "User: [USERNAME]\n> **Joins:** [^JOINS]\n> **Left at:** [^LEFT_AT]\n> **Joined at:** [^JOINED_AT]\n> **Account created:** [^ACCOUNT_CREATED]"
+        }
+    },
+    "canvas": {
+        "leave": "Bye,",
+        "welcome": "Welcome to [^GUILD_NAME],"
+    },
+    "verify-embeds": {
+        "verify": {
+            "title": "Please verify you are a human",
+            "message": "In order to continue we need you to verify that you're a human. Please send me all the green letters of the image to verify you're a human."
+        },
+        "wrong": {
+            "title": "Wrong code",
+            "message": "You've provided the wrong code from the image. Please try it again with the following image."
+        },
+        "correct": {
+            "title": "The code is correct",
+            "message": "You've successfully been verified as a human. You now have the permissions to speak in [^GUILD_NAME]."
+        },
+        "verifyMessage": "[USER] please solve this captcha",
+        "button-captcha-verify": {
+            "title": "Please verify you are a human",
+            "message": "Please press the button below to verify you are a human."
+        },
+        "wrong-button": {
+            "title": "Wrong code",
+            "message": "You've provided the wrong code from the image. Please try it again."
+        },
+        "verify-button": "Verify"
+    },
+    "react-message": {
+        "emoji": {
+            "title": "React to get your role",
+            "message": "React with [^EMOJI] to get the [^ROLE_MENTION] role"
+        },
+        "button": {
+            "title": "Click to get your role",
+            "message": "Click the `[^LABEL]` button to get the [^ROLE_MENTION] role"
+        },
+        "selectmenu": {
+            "title": "Select to get your role",
+            "message": "Click the `[^LABEL]` option to get the [^ROLE_MENTION] role"
+        }
+    },
+    "general": {
+        "help": {
+            "full": {
+                "category-select": {
+                    "title": "Help",
+                    "message": "Select one of the categories in the select menu below to get information about commands with the specific category"
+                },
+                "category": {
+                    "title": "[^CATEGORY] commands",
+                    "message": "[^COMMANDS]",
+                    "command": "**[^COMMAND]:** [^DESCRIPTION]"
+                }
+            }
+        },
+        "addons": {
+            "error-messages": {
+                "not-owner": {
+                    "title": "You are not the owner",
+                    "message": "Only the owner of this application is allowed to execute this function"
+                },
+                "no-addons-installed": {
+                    "title": "No addons installed",
+                    "message": "No addons have been installed inside the `/addons/` directory of your bot"
+                }
+            },
+            "info": {
+                "title": "[^ADDON_NAME]",
+                "message": "> Name: [^ADDON_NAME]\n> Description: [^ADDON_DESCRIPTION]\n\n**Permissions:**\n[^ADDON_PERMISSIONS]",
+                "fields": [{
+                    "name": "Status",
+                    "value": "`[^ADDON_STATUS]`",
+                    "inline": true
+                }, {
+                    "name": "Author",
+                    "value": "[^ADDON_AUTHOR]",
+                    "inline": true
+                }, {
+                    "name": "Version",
+                    "value": "[^ADDON_VERSION]",
+                    "inline": true
+                }, {
+                    "name": "Addon Manager version",
+                    "value": "[^MANAGER_VERSION]",
+                    "inline": false
+                }],
+                "status-messages": {
+                    "online": "🟢 Online",
+                    "starting": "🟢 Starting",
+                    "restarting": "🔄 Restarting",
+                    "stopping": "🔴 Stopping",
+                    "offline": "🔴 Offline"
+                }
+            },
+            "loading-addons": {
+                "title": "Loading addons",
+                "message": "The addons are being loaded and checked for new addons"
+            }
+        },
+        "invites": {
+            "title": "[USERNAME 2]'s invites",
+            "fields": [
+                "[^INVITES]",
+                "[^INVITELEAVES]",
+                "[^TOTALINVITES]"
+            ]
+        },
+        "suggest": {
+            "no-suggestion-provided": {
+                "title": "No suggestion provided",
+                "message": "Please provide a suggestion to post"
+            },
+            "suggestion-too-long": {
+                "title": "Your suggestion is too long",
+                "message": "Your suggestion is too long. A suggestion may maximum include 400 characters."
+            },
+            "embed": {
+                "title": "New suggestion from [USERNAME]",
+                "message": "[USERNAME] has sent a new suggestion:\n\n[^SUGGESTION]",
+                "fields": [{
+                    "inline": true,
+                    "name": "Author",
+                    "value": "[USER]"
+                }, {
+                    "inline": true,
+                    "name": "Upvotes",
+                    "value": "[^UPVOTES]"
+                }, {
+                    "inline": true,
+                    "name": "Downvotes",
+                    "value": "[^DOWNVOTES]"
+                }, {
+                    "inline": true,
+                    "name": "Status",
+                    "value": "[^STATUS]"
+                }],
+                "status": {
+                    "approved": "Approved",
+                    "rejected": "Rejected",
+                    "awaiting-approval": "Awaiting approval"
+                }
+            },
+            "suggestion-sent": {
+                "title": "Suggestion sent",
+                "message": "Your suggestion has successfully been sent in [^SUGGESTION_CHANNEL]"
+            },
+            "unknown-interaction": {
+                "title": "Unknown interaction",
+                "message": "The interaction is . Please try it again."
+            },
+            "actions": {
+                "deny": {
+                    "title": "Reject suggestion",
+                    "message": "Do you want to reject this suggestion? You can't undo this action."
+                },
+                "approve": {
+                    "title": "Approve suggestion",
+                    "message": "Do you want to approve this suggestion? You can't undo this action."
+                },
+                "denied": {
+                    "title": "Suggestion rejected",
+                    "message": "The suggestion from [USERNAME] has been rejected by [USERNAME 2]\n**Reason:** [^REASON]\n\n**Suggestion:** [^SUGGESTION]"
+                },
+                "approved": {
+                    "title": "Suggestion approved",
+                    "message": "The suggestion from [USERNAME] has been approved by [USERNAME 2]\n**Reason:** [^REASON]\n\n**Suggestion:** [^SUGGESTION]"
+                },
+                "cancel": {
+                    "title": "Action cancelled",
+                    "message": "The action to approve/deny the suggestion by [USERNAME] has been cancelled"
+                },
+                "success": {
+                    "approved": {
+                        "title": "Suggestion approved",
+                        "message": "The suggestion has successfully been approved"
+                    },
+                    "denied": {
+                        "title": "Suggestion rejected",
+                        "message": "The suggestion has successfully been rejected"
+                    },
+                    "no-reason": "No reason provided"
+                }
+            },
+            "confirmation": {
+                "upvote": {
+                    "title": "Upvote confirmed",
+                    "message": "Your upvote has successfully been [^ACTION]"
+                },
+                "downvote": {
+                    "title": "Downvote confirmed",
+                    "message": "Your downvote has successfully been [^ACTION]"
+                },
+                "actions": {
+                    "added": "added",
+                    "removed": "removed"
+                }
+            }
+        },
+        "leaderboard": {
+            "no-users": "There are no users in the leaderboard",
+            "leaderboard-title": "Leaderboard",
+            "message-text": "message",
+            "messages-text": "messages",
+            "level-text": "Level",
+            "invite-text": "invites",
+            "leaves-text": "leaves",
+            "total-invites-text": "valid invites",
+            "select-leaderboard-type": {
+                "title": "Select leaderboard type",
+                "message": "Please select one of the leaderboard types to see the leaderboard"
+            }
+        },
+        "tickets-amount": {
+            "title": "Tickets",
+            "message": "There have been **[^CLOSED_TICKETS]** tickets closed and there are **[^OPEN_TICKETS]** tickets open"
+        },
+        "ping": {
+            "loading": {
+                "title": "Loading ping",
+                "message": "The ping is being loaded..."
+            },
+            "ping": {
+                "title": "Ping",
+                "message": "> 🤖 Bot latency: [^BOT_LATENCY]\n> \n> 🏓 Discord API latency: [^DISCORD_API_LATENCY]"
+            }
+        },
+        "serverinfo": {
+            "dateformat": "dd/mm/yy",
+            "memberOverview": {
+                "title": "Member overview",
+                "memberText": "[^MEMBERS] members"
+            },
+            "serverinfo-loading": {
+                "title": "Loading serverinfo",
+                "message": "Loading the serverinfo from [^GUILD_NAME]..."
+            },
+            "embed": {
+                "title": "Server info",
+                "description": "> **Server name:** [^GUILD_NAME]\n> \n> **Server description:**\n> [^GUILD_DESCRIPTION]",
+                "no-description": "Discord server has no description",
+                "fields": {
+                    "textChannel": "Text Channels",
+                    "voiceChannel": "Voice Channels",
+                    "otherChannel": "Other Channels",
+                    "rolesCount": "Roles",
+                    "memberCount": "Members",
+                    "serverCreated": "Server created",
+                    "serverId": "Server id",
+                    "serverOwner": "Server owner",
+                    "locale": "Server locale",
+                    "boosts": "Server boosts",
+                    "icon": "Server icon",
+                    "bots": "Bots"
+                }
+            }
+        },
+        "afk": {
+            "user-is-afk": {
+                "title": "[USERNAME 2] is AFK",
+                "message": "[USERNAME 2] has set theirself to AFK for the reason `[^REASON]`"
+            },
+            "set-afk": {
+                "title": "You've been set to AFK",
+                "message": "You have successfully been set to AFK for the reason `[^REASON]`"
+            },
+            "removed-afk": {
+                "title": "AFK removed",
+                "message": "Your AFK status has successfully been removed"
+            },
+            "reason-too-long": {
+                "title": "The provided reason is too long",
+                "message": "The provided reason is too long. The reason may maximum include 400 characters."
+            }
+        },
+        "avatar": {
+            "title": "[USERNAME 2]'s avatar"
+        },
+        "banner": {
+            "no-banner": {
+                "title": "User has no banner",
+                "message": "This user has no banner set and can therefore not be displayed"
+            },
+            "banner": {
+                "title": "[USERNAME 2]'s banner"
+            }
+        },
+        "uptime": {
+            "title": "Uptime",
+            "message": "The last restart of the bot was <t:[^TIMESTAMP]:R>"
+        }
+    },
+    "games": {
+        "minecraft": {
+            "loading": {
+                "title": "Loading status",
+                "message": "The server status is being loaded..."
+            },
+            "disabled": {
+                "title": "Minecraft server disabled",
+                "message": "The minecraft server commands have been disabled by the bot's owner"
+            },
+            "offline": {
+                "title": "Offline",
+                "message": "The minecraft server is currently offline"
+            },
+            "ip": {
+                "title": "Server ip",
+                "message": "The ip of the minecraft server is `[^MINECRAFT_SERVER_IP]`"
+            },
+            "status": {
+                "title": "Minecraft server status"
+            }
+        },
+        "fivem": {
+            "disabled": {
+                "title": "FiveM server disabled",
+                "message": "The FiveM server commands have been disabled by the bot's owner"
+            },
+            "offline": {
+                "title": "Offline",
+                "message": "The FiveM server is currently offline"
+            },
+            "status": {
+                "title": "FiveM server status"
+            }
+        }
+    },
+    "autoReply": {
+        "command": {
+            "title": "Command not found",
+            "message": "I couldn't find the command `[^PREFIX][^COMMAND_INPUT]`. Did you mean the command `[^PREFIX][^COMMAND_SUGGESTION]`?\n\n`[^PREFIX][^COMMAND_SUGGESTION]`: `[^COMMAND_DESCRIPTION]`"
+        },
+        "song": {
+            "title": "Play this song",
+            "message": "Do you want me to play the following song/playlist?\n\n[[^SONG]]([^SONG_URL])"
+        }
+    }
+}
