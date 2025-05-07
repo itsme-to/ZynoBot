@@ -1,0 +1,180 @@
+{
+    "work": [
+        {
+            "message": "You worked as a car destroyer and received [MONEY].",
+            "positive": true,
+            "min": 100,
+            "max": 150
+        }, {
+            "message": "You were hired to kill someone and received [MONEY].",
+            "positive": true,
+            "min": 100,
+            "max": 200
+        }, {
+            "message": "You worked as a prostitute and received [MONEY].",
+            "positive": true,
+            "min": 50,
+            "max": 150
+        }, {
+            "message": "You worked as a bus driver and received [MONEY].",
+            "positive": true,
+            "min": 30,
+            "max": 60
+        }, {
+            "message": "You were hired by the maffia to rob a bank and you received [MONEY].",
+            "positive": true,
+            "min": 120,
+            "max": 240
+        }, {
+            "message": "You worked at a callcentre to scam people. You scammed [RANDOM] persons for [MONEY].",
+            "positive": true,
+            "min": 70,
+            "max": 150,
+            "random": {
+                "min": 2,
+                "max": 4
+            }
+        }, {
+            "message": "You worked at a petshop and got paid [MONEY].",
+            "positive": true,
+            "min": 30,
+            "max": 50
+        }, {
+            "message": "Your mom has hired you to clean her house and paid you [MONEY].",
+            "positive": true,
+            "min": 20,
+            "max": 40
+        }, {
+            "message": "You got hired as a mascot at a sexstore and got paid [MONEY].",
+            "positive": true,
+            "min": 30,
+            "max": 40
+        }, {
+            "message": "You've sold drugs to some guy and received [MONEY].",
+            "positive": true,
+            "min": 50,
+            "max": 70
+        }
+    ],
+    "beg": [
+        {
+            "message": "You were begging for some money when a stranger gave you [MONEY].",
+            "positive": true,
+            "min": 10,
+            "max": 30
+        }, {
+            "message": "A multi millionaire gave you [MONEY].",
+            "positive": true,
+            "min": 1,
+            "max": 5
+        }, {
+            "message": "A sweet old lady saw you begging for some money and gave you [MONEY].",
+            "positive": true,
+            "min": 20,
+            "max": 40
+        }, {
+            "message": "Some street guys saw you begging for money, they kicked you and ran away.",
+            "positive": false
+        }, {
+            "message": "A nice guy gave you some food to eat. You decided to sell it to an homeless guy for [MONEY].",
+            "positive": true,
+            "min": 30,
+            "max": 50
+        }
+    ],
+    "crime": [
+        {
+            "message": "The guy that lives the next door threw a big house party and you were invited. You stole the DJ's electronics and sold it for [MONEY].",
+            "positive": true,
+            "min": 100,
+            "max": 200
+        }, {
+            "message": "You killed a sweet old lady and stole her jewels and sold them for [MONEY].",
+            "positive": true,
+            "min": 150,
+            "max": 250
+        }, {
+            "message": "A criminal organization hired you to be their driver in a robbery. They paid you [MONEY]",
+            "positive": true,
+            "min": 100,
+            "max": 150
+        }, {
+            "message": "You kidnapped the president and threatened to kill him. The world was so scared for you so they started a fundraiser to pay you [MONEY].",
+            "positive": true,
+            "min": 300,
+            "max": 500
+        }, {
+            "message": "You broke into someone's house but the owner's dog caught you. The dog called the cops and you wire fined [MONEY].",
+            "positive": false,
+            "min": -100,
+            "max": -300
+        }, {
+            "message": "You broke into someone's house. You saw some medicines but thought it was drugs so you took them. It turned out it wasn't good for you so you passed out. Once the owner from the house came back, he called the cops and you were fined [MONEY].",
+            "positive": false,
+            "min": -60,
+            "max": -170
+        }, {
+            "message": "You broke into the NASA headquarter and stole a key to a satellite. You decided to sell it to a shadowy person for [MONEY].",
+            "positive": true,
+            "min": 80,
+            "max": 130
+        }, {
+            "message": "You tried to log in on Bill Gates's pc but you failed to log in and the pc called the cops. You were fined [MONEY].",
+            "positive": false,
+            "min": -40,
+            "max": -130
+        }, {
+            "message": "You tried to steal a car from another criminal. He saw you and stole [MONEY] from you.",
+            "positive": false,
+            "min": -70,
+            "max": -100
+        }
+    ],
+    "rob": [
+        {
+            "message": "You tried to rob [USER], but he saw you and called the cops. You were fined [MONEY].",
+            "positive": false,
+            "min": -40,
+            "max": -70
+        }, {
+            "message": "You robbed [USER]'s car and sold it for [MONEY].",
+            "positive": true,
+            "min": 80,
+            "max": 140
+        }, {
+            "message": "You broke into [USER]'s home and stole stuff worth of [MONEY].",
+            "positive": true,
+            "min": 120,
+            "max": 200
+        }, {
+            "message": "You saw [USER] dealing drugs on street. You threatened to call the cops if [USER] didn't pay you. You received [MONEY].",
+            "positive": true,
+            "min": 100,
+            "max": 140
+        }, {
+            "message": "You stole [MONEY] from [USER] while breaking into [USER]'s bank account.",
+            "positive": true,
+            "min": 60,
+            "max": 130
+        }, {
+            "message": "You stole [USER]'s partner and sold [USER]'s partner for [MONEY].",
+            "positive": true,
+            "min": 130,
+            "max": 180
+        }, {
+            "message": "While trying to steal [USER]'s partner, you accidentally stole [USER]. [USER] called the cops and you were fined [MONEY].",
+            "positive": false,
+            "min": -80,
+            "max": -140
+        }, {
+            "message": "You stole [RANDOM] children from [USER]'s basement and sold them for [MONEY].",
+            "positive": true,
+            "min": 150,
+            "max": 200,
+            "random": {
+                "min": 2,
+                "max": 5
+            }
+        }
+    ]
+}
