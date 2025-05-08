@@ -1,0 +1,77 @@
+[
+  {
+    "key": "YSC",
+    "value": "8BeVoHPwtLY",
+    "domain": "youtube.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "extensions": [
+      "Partitioned"
+    ],
+    "hostOnly": false,
+    "creation": "2024-11-09T18:29:56.498Z",
+    "lastAccessed": "2024-11-09T18:30:05.794Z",
+    "sameSite": "none"
+  },
+  {
+    "key": "VISITOR_PRIVACY_METADATA",
+    "value": "CgJKRRIEGgAgDQ%3D%3D",
+    "expires": "2025-05-08T18:29:46.000Z",
+    "domain": "youtube.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "hostOnly": false,
+    "creation": "2024-11-09T18:29:56.501Z",
+    "lastAccessed": "2024-11-09T18:30:05.794Z",
+    "sameSite": "none"
+  },
+  {
+    "key": "SOCS",
+    "value": "CAI",
+    "domain": "youtube.com",
+    "path": "/",
+    "secure": true,
+    "hostOnly": false,
+    "creation": "2024-11-09T18:29:58.183Z",
+    "lastAccessed": "2024-11-09T18:30:05.794Z",
+    "sameSite": "lax"
+  },
+  {
+    "key": "CONSENT",
+    "value": "PENDING+5",
+    "domain": "youtube.com",
+    "path": "/",
+    "secure": true,
+    "hostOnly": false,
+    "creation": "2024-11-09T18:29:58.184Z",
+    "lastAccessed": "2024-11-09T18:30:05.794Z",
+    "sameSite": "None"
+  },
+  {
+    "key": "GPS",
+    "value": "1",
+    "expires": "2024-11-09T18:59:46.000Z",
+    "domain": "youtube.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "hostOnly": false,
+    "creation": "2024-11-09T18:29:58.298Z",
+    "lastAccessed": "2024-11-09T18:30:05.794Z"
+  },
+  {
+    "key": "VISITOR_INFO1_LIVE",
+    "value": "erKxxj5f8aQ",
+    "expires": "2025-05-08T18:29:46.000Z",
+    "domain": "youtube.com",
+    "path": "/",
+    "secure": true,
+    "httpOnly": true,
+    "hostOnly": false,
+    "creation": "2024-11-09T18:29:58.300Z",
+    "lastAccessed": "2024-11-09T18:30:05.794Z",
+    "sameSite": "none"
+  }
+]
